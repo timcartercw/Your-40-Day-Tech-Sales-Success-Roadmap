@@ -1,0 +1,1730 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your 20-Day Tech Sales Success Roadmap</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['Inter', 'sans-serif'],
+            },
+            colors: {
+              'palette-deep-blue': '#00449E',
+              'palette-bright-blue': '#0059CF',
+              'palette-blue': '#007BFF',
+              'palette-light-blue': '#41A0FF',
+              'palette-lighter-blue': '#89C8FF',
+              'palette-bg': '#EBF5FF',
+              'body-bg': '#F7FAFC',
+              'accent-red': '#E53E3E', 
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      body { 
+        font-family: 'Inter', sans-serif; 
+        background-color: '#F7FAFC';
+        color: '#1a202c';
+        /* Ensure the body itself is not restricted in height */
+        min-height: 100vh;
+        scroll-behavior: smooth;
+      }
+      .chart-container {
+        position: relative;
+        width: 100%;
+        max-width: 400px;
+        margin-left: auto;
+        margin-right: auto;
+        height: 250px;
+        max-height: 300px;
+      }
+      @media (min-width: 640px) {
+        .chart-container {
+          height: 280px;
+          max-width: 500px;
+        }
+      }
+      .day-card {
+        border-left: 6px solid #0059CF;
+      }
+      .nav-link.active {
+        background-color: #007BFF;
+        color: white;
+        font-weight: 700;
+      }
+    </style>
+</head>
+<body class="body-bg">
+  <div id="top"></div>
+
+  <nav class="sticky top-0 z-10 bg-white shadow-lg border-b border-palette-bg p-2 md:p-3">
+    <div class="container mx-auto flex flex-wrap justify-center text-sm md:text-base">
+        <a href="#week-1" class="nav-link px-3 py-1 m-1 rounded-full text-palette-deep-blue hover:bg-palette-bg transition">Week 1: Foundations</a>
+        <a href="#week-2" class="nav-link px-3 py-1 m-1 rounded-full text-palette-deep-blue hover:bg-palette-bg transition">Week 2: Tech Fluency</a>
+        <a href="#week-3" class="nav-link px-3 py-1 m-1 rounded-full text-palette-deep-blue hover:bg-palette-bg transition">Week 3: Mastering Process</a>
+        <a href="#week-4" class="nav-link px-3 py-1 m-1 rounded-full text-palette-deep-blue hover:bg-palette-bg transition">Week 4: Data & AI</a>
+        <a href="#week-5" class="nav-link px-3 py-1 m-1 rounded-full text-palette-deep-blue hover:bg-palette-bg transition">Week 5: Demos & Value</a>
+        <a href="#week-6" class="nav-link px-3 py-1 m-1 rounded-full text-palette-deep-blue hover:bg-palette-bg transition">Week 6: Prospecting & POCs</a>
+        <a href="#week-7" class="nav-link px-3 py-1 m-1 rounded-full text-palette-deep-blue hover:bg-palette-bg transition">Week 7: HealthTech Sprint</a>
+        <a href="#week-8" class="nav-link px-3 py-1 m-1 rounded-full text-palette-deep-blue hover:bg-palette-bg transition">Week 8: Cybersecurity Sprint</a>
+    </div>
+  </nav>
+
+  <div class="container mx-auto p-4 md:p-8 max-w-6xl">
+
+    <header class="text-center mb-12">
+      <h1 class="text-4xl md:text-5xl font-bold text-palette-deep-blue mb-4">Your 40-Day Tech Sales Success Roadmap</h1>
+      <p class="text-xl md:text-2xl text-palette-bright-blue">How to Master Technology, Process, and the Business Value of Sales</p>
+    </header>
+
+    
+    <div id="week-1" class="pt-8">
+      <h2 class="text-4xl font-extrabold text-palette-deep-blue border-b-4 border-palette-light-blue pb-3 mb-10 text-center">
+        Week 1: Mastering Foundational Concepts & Mindset
+      </h2>
+
+      <section id="w1d1" class="day-card bg-white rounded-lg shadow-xl p-6 mb-8">
+        <h3 class="text-2xl font-bold text-palette-bright-blue mb-4">Day 1 | Topic: Tech Industry & Business Models</h3>
+        <p class="text-gray-600 mb-6">**Story:** Before you can be successful in tech sales, you have to understand the ground you're standing on. We're going to look at the four biggest types of companies that dominate the tech world today. Understanding the **business model** tells you where the money comes from and what problem your client is trying to solve.</p>
+        
+        <div class="grid md:grid-cols-2 gap-6">
+          <div>
+            <h4 class="font-bold text-palette-deep-blue mb-2">📘 Key Terms</h4>
+            <ul class="list-disc list-inside text-sm space-y-1">
+              <li>**SaaS:** Software accessed on subscription (recurring revenue).</li>
+              <li>**Fintech:** Tech improving financial services (speed & efficiency).</li>
+              <li>**Cybersecurity:** Solutions protecting data (selling trust & risk mitigation).</li>
+            </ul>
+            <h4 class="font-bold text-palette-deep-blue mt-4 mb-2">💼 Use Case</h4>
+            <p class="text-sm text-gray-700 p-2 bg-palette-bg rounded-lg">Pitching a cloud-based **SaaS** alternative to a small agency. Focus: "Instead of paying a massive one-time fee, you pay a small monthly subscription, shifting the cost to a predictable operational expense."</p>
+          </div>
+          <div class="chart-container">
+            <h4 class="text-center text-sm font-semibold text-gray-700">W1 Focus Breakdown by Model</h4>
+            <canvas id="w1d1Chart"></canvas>
+          </div>
+        </div>
+      </section>
+
+      <section id="w1d2" class="day-card bg-white rounded-lg shadow-xl p-6 mb-8">
+        <h3 class="text-2xl font-bold text-palette-bright-blue mb-4">Day 2 | Topic: Sales & Sales Engineering Roles</h3>
+        <p class="text-gray-600 mb-6">**Story:** A sales deal is like a team-run marathon. No single person handles every mile; we pass the baton. This day is about defining the core members: the **SDR** (Hunter), **AE** (Closer), and **SE** (Expert). Knowing these roles is key to flawless collaboration.</p>
+        
+        <div class="grid md:grid-cols-2 gap-6 items-center">
+          <div>
+            <h4 class="font-bold text-palette-deep-blue mb-2">📘 Key Terms</h4>
+            <ul class="list-disc list-inside text-sm space-y-1">
+              <li>**SDR:** Hunter, qualifies leads, fills the funnel.</li>
+              <li>**AE:** Closer, manages cycle, meets revenue quota.</li>
+              <li>**SE (Presales):** Expert, runs technical demos, proves feasibility.</li>
+            </ul>
+            <h4 class="font-bold text-palette-deep-blue mt-4 mb-2">💼 Use Case</h4>
+            <p class="text-sm text-gray-700 p-2 bg-palette-bg rounded-lg">During an AE presentation, the head of IT asks a specific question. The **AE** immediately introduces the **SE** who provides an expert explanation, turning a technical roadblock into a point of trust.</p>
+          </div>
+          <div class="flex justify-center items-center h-full">
+            <div class="flex flex-col items-center p-4 bg-palette-lighter-blue rounded-lg shadow-md w-full max-w-sm">
+                <div class="text-lg font-bold text-palette-deep-blue">The Sales Handoff</div>
+                <div class="flex justify-between w-full mt-3">
+                    <div class="text-center">
+                        <span class="text-2xl">🕵️‍♀️</span>
+                        <p class="text-sm font-bold text-palette-deep-blue">SDR (Find)</p>
+                    </div>
+                    <span class="text-2xl text-palette-blue self-center">&rarr;</span>
+                    <div class="text-center">
+                        <span class="text-2xl">🤝</span>
+                        <p class="text-sm font-bold text-palette-deep-blue">AE (Close)</p>
+                    </div>
+                    <span class="text-2xl text-palette-blue self-center">+</span>
+                    <div class="text-center">
+                        <span class="text-2xl">🧠</span>
+                        <p class="text-sm font-bold text-palette-deep-blue">SE (Solve)</p>
+                    </div>
+                </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="w1d3" class="day-card bg-white rounded-lg shadow-xl p-6 mb-8">
+        <h3 class="text-2xl font-bold text-palette-bright-blue mb-4">Day 3 | Topic: Sales Cycles & Funnels Methodology</h3>
+        <p class="text-gray-600 mb-6">**Story:** Sales is a repeatable process, not a magical handshake. The **Sales Cycle** is the script, and the **Sales Funnel** is the map. We learn how to track customer progress from initial problem realization to contract signing, ensuring we know which action to take at every stage.</p>
+        
+        <div class="grid md:grid-cols-2 gap-6 items-center">
+          <div>
+            <h4 class="font-bold text-palette-deep-blue mb-2">📘 Key Terms</h4>
+            <ul class="list-disc list-inside text-sm space-y-1">
+              <li>**Sales Cycle:** Time from first contact to close (provides structure).</li>
+              <li>**Sales Funnel:** Visual model of the process (tracks drop-off points).</li>
+              <li>**Methodology:** Structured framework used to sell (e.g., SPIN).</li>
+            </ul>
+            <h4 class="font-bold text-palette-deep-blue mt-4 mb-2">💼 Use Case</h4>
+            <p class="text-sm text-gray-700 p-2 bg-palette-bg rounded-lg">You see a deal stuck for 40 days in the "Demo Scheduled" stage (too long for the average **Cycle**). You realize the bottleneck is follow-up and implement a new **Methodology** to speed up that specific stage.</p>
+          </div>
+          <div class="flex flex-col justify-center items-center h-full w-full max-w-sm mx-auto">
+            <h4 class="text-center text-sm font-semibold text-gray-700">Average Sales Cycle Distribution</h4>
+            <div class="chart-container w-full h-full"> 
+                <canvas id="w1d3Chart"></canvas>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="w1d4" class="day-card bg-white rounded-lg shadow-xl p-6 mb-8">
+        <h3 class="text-2xl font-bold text-palette-bright-blue mb-4">Day 4 | Topic: Growth Mindset & Personal Development Plan</h3>
+        <p class="text-gray-600 mb-6">**Story:** The greatest tool you have isn't your product; it’s your ability to learn. A **Growth Mindset** is your superpower: seeing rejection as data for improvement. This mindset fuels your **Personal Development Plan (PDP)**, turning ambition into measurable daily action.</p>
+        
+        <div class="grid md:grid-cols-2 gap-6 items-center">
+          <div>
+            <h4 class="font-bold text-palette-deep-blue mb-2">📘 Key Terms</h4>
+            <ul class="list-disc list-inside text-sm space-y-1">
+              <li>**Growth Mindset:** Belief that abilities can be improved (fuels resilience).</li>
+              <li>**PDP:** Written roadmap for career goals and skill acquisition.</li>
+              <li>**Emotional Intelligence:** Ability to manage emotions and build rapport.</li>
+            </ul>
+            <h4 class="font-bold text-palette-deep-blue mt-4 mb-2">💼 Use Case</h4>
+            <p class="text-sm text-gray-700 p-2 bg-palette-bg rounded-lg">You receive tough feedback on a demo. Instead of getting defensive (Fixed), you update your **PDP** to include "Run 3 Mock Demos Per Week" and proactively seek coaching (Growth Mindset).</p>
+          </div>
+          <div class="chart-container">
+            <h4 class="text-center text-sm font-semibold text-gray-700">W1 Focus: Personal Growth Pillars</h4>
+            <canvas id="w1d4Chart"></canvas>
+          </div>
+        </div>
+      </section>
+
+      <section id="w1d5" class="day-card bg-white rounded-lg shadow-xl p-6 mb-8">
+        <h3 class="text-2xl font-bold text-palette-bright-blue mb-4">Day 5 | Topic: Week 1 Consolidation & Career Coaching Intro</h3>
+        <p class="text-gray-600 mb-6">**Story:** Day 5 is consolidation, teamwork, and an introduction to career readiness. The focus shifts to active application of the foundational concepts learned—roles, funnels, and mindset—preparing for the technical deep-dive in Week 2. This is where students practice the **Role Simulation** assignments.</p>
+        
+        <div class="grid md:grid-cols-2 gap-6 items-center">
+          <div>
+            <h4 class="font-bold text-palette-deep-blue mb-2">📘 Key Activities</h4>
+            <ul class="list-disc list-inside text-sm space-y-1">
+              <li>**Role Simulation:** Practicing handoffs between SDR and AE.</li>
+              <li>**Case Study:** Mapping sales roles to different business models (SaaS, Fintech).</li>
+              <li>**Active Listening:** Roleplays focusing on emotional intelligence.</li>
+            </ul>
+            <h4 class="font-bold text-palette-deep-blue mt-4 mb-2">💼 Key Takeaway</h4>
+            <p class="text-sm text-gray-700 p-2 bg-palette-bg rounded-lg">Sales success starts with internal process and mindset. You must be able to clearly articulate the team structure and the sales process before you can talk about the product.</p>
+          </div>
+          <div class="chart-container">
+            <h4 class="text-center text-sm font-semibold text-gray-700">Time Allocation (Practice vs. Theory)</h4>
+            <canvas id="w1d5Chart"></canvas>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    
+    <div id="week-2" class="pt-8">
+      <h2 class="text-4xl font-extrabold text-palette-deep-blue border-b-4 border-palette-light-blue pb-3 mb-10 text-center">
+        Week 2: Building Technical Fluency for Sales
+      </h2>
+
+      <section id="w2d1" class="day-card bg-white rounded-lg shadow-xl p-6 mb-8">
+        <h3 class="text-2xl font-bold text-palette-bright-blue mb-4">Day 1 | Topic: IT, Software, Cloud, and Cybersecurity Essentials</h3>
+        <p class="text-gray-600 mb-6">**Story:** To sell to the IT department, you must speak their language. We break down the four pillars of the modern tech stack: **IT**, **Software**, the **Cloud** (hosting), and **Cybersecurity** (risk mitigation). You sell flexibility and trust.</p>
+        
+        <div class="grid md:grid-cols-2 gap-6 items-center">
+          <div>
+            <h4 class="font-bold text-palette-deep-blue mb-2">📘 Key Terms</h4>
+            <ul class="list-disc list-inside text-sm space-y-1">
+              <li>**IT:** Hardware/networks (the technical buyer's domain).</li>
+              <li>**Cloud:** Hosting over the internet (saves money, provides scale).</li>
+              <li>**Cybersecurity:** Protection from attacks (selling trust and risk reduction).</li>
+            </ul>
+            <h4 class="font-bold text-palette-deep-blue mt-4 mb-2">💼 Use Case</h4>
+            <p class="text-sm text-gray-700 p-2 bg-palette-bg rounded-lg">A client is wary of the **Cloud**. You counter by stating that your Cloud provider has more dedicated **Cybersecurity** experts and certifications (SOC 2) than their small internal IT team could ever afford, selling them peace of mind.</p>
+          </div>
+          <div class="chart-container">
+            <h4 class="text-center text-sm font-semibold text-gray-700">Pillars Ranked by Buyer Priority</h4>
+            <canvas id="w2d1Chart"></canvas>
+          </div>
+        </div>
+      </section>
+
+      <section id="w2d2" class="day-card bg-white rounded-lg shadow-xl p-6 mb-8">
+        <h3 class="text-2xl font-bold text-palette-bright-blue mb-4">Day 2 | Topic: APIs, Software Development Life Cycle (SDLC)</h3>
+        <p class="text-gray-600 mb-6">**Story:** How do apps talk? **APIs** are the secret handshake. The **SDLC** is the structured "recipe" your company follows to plan, build, test, and release new features safely. You sell the API for seamless **integration** and the SDLC for product **reliability**.</p>
+        
+        <div class="grid md:grid-cols-2 gap-6 items-center">
+          <div>
+            <h4 class="font-bold text-palette-deep-blue mb-2">📘 Key Terms</h4>
+            <ul class="list-disc list-inside text-sm space-y-1">
+              <li>**API:** Set of rules for two apps to share data (universal translator).</li>
+              <li>**SDLC:** Standard process (plan, design, test, deploy) for building software.</li>
+              <li>**Integration:** Combining systems so they work together (improves ROI).</li>
+            </ul>
+            <h4 class="font-bold text-palette-deep-blue mt-4 mb-2">💼 Use Case</h4>
+            <p class="text-sm text-gray-700 p-2 bg-palette-bg rounded-lg">Client asks about manual data transfer to their CRM. You assure them your robust **API** allows instantaneous **Integration**: "When our system logs a deal, the API automatically updates your CRM, saving your team six hours of manual entry per week."</p>
+          </div>
+          <div class="flex flex-col justify-center items-center h-full max-w-md mx-auto w-full">
+            <h4 class="text-center text-sm font-semibold text-gray-700">SDLC Process Flow</h4>
+            <div class="flex justify-between w-full mt-4 text-center">
+                <div class="flex flex-col items-center">
+                    <div class="p-3 bg-palette-deep-blue text-white rounded-full">1</div>
+                    <p class="text-xs mt-1 text-palette-deep-blue font-semibold">Design</p>
+                </div>
+                <span class="text-xl text-palette-light-blue self-center">&rarr;</span>
+                <div class="flex flex-col items-center">
+                    <div class="p-3 bg-palette-deep-blue text-white rounded-full">2</div>
+                    <p class="text-xs mt-1 text-palette-deep-blue font-semibold">Build (API)</p>
+                </div>
+                <span class="text-xl text-palette-light-blue self-center">&rarr;</span>
+                <div class="flex flex-col items-center">
+                    <div class="p-3 bg-palette-deep-blue text-white rounded-full">3</div>
+                    <p class="text-xs mt-1 text-palette-deep-blue font-semibold">Test</p>
+                </div>
+                <span class="text-xl text-palette-light-blue self-center">&rarr;</span>
+                <div class="flex flex-col items-center">
+                    <div class="p-3 bg-palette-deep-blue text-white rounded-full">4</div>
+                    <p class="text-xs mt-1 text-palette-deep-blue font-semibold">Deploy</p>
+                </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="w2d3" class="day-card bg-white rounded-lg shadow-xl p-6 mb-8">
+        <h3 class="text-2xl font-bold text-palette-bright-blue mb-4">Day 3 | Topic: DevOps for Sales</h3>
+        <p class="text-gray-600 mb-6">**Story:** Imagine your software company needs to push a security patch. **DevOps** is a culture of teamwork and **automation** between developers and IT. The result: features are released in hours, not months. You sell this speed and agility to the client.</p>
+        
+        <div class="grid md:grid-cols-2 gap-6 items-center">
+          <div>
+            <h4 class="font-bold text-palette-deep-blue mb-2">📘 Key Terms</h4>
+            <ul class="list-disc list-inside text-sm space-y-1">
+              <li>**DevOps:** Culture unifying Dev + Ops (speeds up delivery).</li>
+              <li>**CI/CD:** Automated "pipeline" for building, testing, and deploying new code.</li>
+              <li>**Automation:** Eliminates human error and reduces downtime.</li>
+            </ul>
+            <h4 class="font-bold text-palette-deep-blue mt-4 mb-2">💼 Use Case</h4>
+            <p class="text-sm text-gray-700 p-2 bg-palette-bg rounded-lg">Pitching a bank. You contrast your **CI/CD** speed with a competitor's manual process: "While their patch takes **21 days**, our automated pipeline can push a critical security feature in under **48 hours**—that's a competitive advantage."</p>
+          </div>
+          <div class="chart-container">
+            <h4 class="text-center text-sm font-semibold text-gray-700">Release Cycle Comparison (Days)</h4>
+            <canvas id="w2d3Chart"></canvas>
+          </div>
+        </div>
+      </section>
+
+      <section id="w2d4" class="day-card bg-white rounded-lg shadow-xl p-6 mb-8">
+        <h3 class="text-2xl font-bold text-palette-bright-blue mb-4">Day 4 | Topic: Translating Technical Concepts into Sales Language</h3>
+        <p class="text-gray-600 mb-6">**Story:** Customers don't buy features; they buy solutions to their pain. Your job is to be the translator: taking a **Technical Feature** ("what it does") and converting it into a **Business Benefit** ("why you should care"). We practice moving to **Business Language** (ROI, risk, efficiency).</p>
+        
+        <div class="grid md:grid-cols-2 gap-6 items-center">
+          <div>
+            <h4 class="font-bold text-palette-deep-blue mb-2">📘 Key Terms</h4>
+            <ul class="list-disc list-inside text-sm space-y-1">
+              <li>**Feature:** A technical product attribute.</li>
+              <li>**Value/Benefit:** The positive business outcome.</li>
+              <li>**Business Language:** Terms focused on executive outcomes (ROI).</li>
+            </ul>
+            <h4 class="font-bold text-palette-deep-blue mt-4 mb-2">💼 Use Case</h4>
+            <p class="text-sm text-gray-700 p-2 bg-palette-bg rounded-lg">Technical Feature: "Our integrated **API** populates data fields." Translation for the CFO: "This saves your AP team 15 hours per week on data entry, providing a **200% ROI** in the first year alone."</p>
+          </div>
+          <div class="flex flex-col h-full justify-center space-y-3">
+            <h4 class="text-center text-sm font-semibold text-gray-700">The Value Translation Chain</h4>
+            <div class="p-3 bg-palette-lighter-blue rounded-lg shadow text-center">
+                <p class="text-sm font-bold text-palette-deep-blue">1. Technical Feature</p>
+            </div>
+            <p class="text-xl text-palette-blue text-center font-bold">⬇️</p>
+            <div class="p-3 bg-palette-light-blue rounded-lg shadow text-center">
+                <p class="text-sm font-bold text-palette-deep-blue">2. Business Benefit</p>
+            </div>
+            <p class="text-xl text-palette-blue text-center font-bold">⬇️</p>
+            <div class="p-3 bg-palette-deep-blue rounded-lg shadow text-center text-white">
+                <p class="text-sm font-bold">3. Financial Impact (ROI)</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="w2d5" class="day-card bg-white rounded-lg shadow-xl p-6 mb-8">
+        <h3 class="text-2xl font-bold text-palette-bright-blue mb-4">Day 5 | Topic: SaaS, Cloud, AI & Automation Impacts on Sales</h3>
+        <p class="text-gray-600 mb-6">**Story:** Technology isn't just your product; it's your process. **AI** helps you decide who to call, and **Automation** handles the boring tasks. This frees you up to do the most valuable thing: building relationships and closing deals.</p>
+        
+        <div class="grid md:grid-cols-2 gap-6 items-center">
+          <div>
+            <h4 class="font-bold text-palette-deep-blue mb-2">📘 Key Terms</h4>
+            <ul class="list-disc list-inside text-sm space-y-1">
+              <li>**Automation:** Software performing repetitive tasks (consistent follow-up).</li>
+              <li>**AI:** Used for Lead Scoring and generating personalized outreach.</li>
+              <li>**CRM:** The central platform that enables all sales Automation.</li>
+            </ul>
+            <h4 class="font-bold text-palette-deep-blue mt-4 mb-2">💼 Use Case</h4>
+            <p class="text-sm text-gray-700 p-2 bg-palette-bg rounded-lg">A lead visits your pricing page. Your **AI** assigns a high Lead Score, triggering a **CRM Automation** that sends a personalized email and alerts the SDR to call them within 10 minutes, engaging the lead at their moment of peak interest.</p>
+          </div>
+          <div class="chart-container">
+            <h4 class="text-center text-sm font-semibold text-gray-700">Salesperson Time Allocation (Post-Automation)</h4>
+            <canvas id="w2d5Chart"></canvas>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    
+    <div id="week-3" class="pt-8">
+      <h2 class="text-4xl font-extrabold text-palette-deep-blue border-b-4 border-palette-light-blue pb-3 mb-10 text-center">
+        Week 3: Mastering Funnels, CRM, and Process
+      </h2>
+
+      <section id="w3d1" class="day-card bg-white rounded-lg shadow-xl p-6 mb-8">
+        <h3 class="text-2xl font-bold text-palette-bright-blue mb-4">Day 1 | Topic: Sales Funnel Design: TOFU → BOFU</h3>
+        <p class="text-gray-600 mb-6">**Story:** The **Sales Funnel** is the blueprint of your revenue stream. We separate it into three stages: **TOFU** (Awareness), **MOFU** (Evaluation), and **BOFU** (Decision). Getting this design right means understanding the customer’s mindset at each point, leading to predictable growth.</p>
+        
+        <div class="grid md:grid-cols-2 gap-6 items-center">
+          <div>
+            <h4 class="font-bold text-palette-deep-blue mb-2">📘 Key Terms</h4>
+            <ul class="list-disc list-inside text-sm space-y-1">
+              <li>**TOFU:** Awareness/Research (Goal: Education).</li>
+              <li>**MOFU:** Evaluation/Comparison (Goal: Prove Value).</li>
+              <li>**BOFU:** Decision/Commitment (Goal: Conversion).</li>
+            </ul>
+            <h4 class="font-bold text-palette-deep-blue mt-4 mb-2">💼 Use Case</h4>
+            <p class="text-sm text-gray-700 p-2 bg-palette-bg rounded-lg">An SDR sees a prospect download a whitepaper (**TOFU** activity). The system automatically sends a follow-up email sequence offering a free demo (**MOFU** content), moving the prospect strategically down the funnel.</p>
+          </div>
+          <div class="flex flex-col justify-center items-center h-full max-w-sm mx-auto w-full">
+            <h4 class="text-center text-sm font-semibold text-gray-700">Funnel Conversion Goal</h4>
+            <div class="bg-palette-light-blue p-3 w-full text-center text-white font-bold rounded-t-lg shadow-md">
+              TOFU: 5% MQL Conversion
+            </div>
+            <div class="bg-palette-blue p-3 w-11/12 text-center text-white font-bold shadow-md">
+              MOFU: 25% SQL Conversion
+            </div>
+            <div class="bg-palette-deep-blue p-3 w-10/12 text-center text-white font-bold rounded-b-lg shadow-md">
+              BOFU: 60% Closed-Won
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="w3d2" class="day-card bg-white rounded-lg shadow-xl p-6 mb-8">
+        <h3 class="text-2xl font-bold text-palette-bright-blue mb-4">Day 2 | Topic: Customer Journey Mapping</h3>
+        <p class="text-gray-600 mb-6">**Story:** You need to put yourself in the buyer's shoes. **Customer Journey Mapping** creates a visual timeline of every interaction to find the **Pain Points** (moments of friction) and design your sales process to eliminate them, building trust and speed.</p>
+        
+        <div class="grid md:grid-cols-2 gap-6 items-center">
+          <div>
+            <h4 class="font-bold text-palette-deep-blue mb-2">📘 Key Terms</h4>
+            <ul class="list-disc list-inside text-sm space-y-1">
+              <li>**Customer Journey:** Entire experience from first search to renewal.</li>
+              <li>**Pain Point:** Specific problem a customer is experiencing (you sell the solution).</li>
+              <li>**Touchpoint:** Any interaction (call, demo, chat).</li>
+            </ul>
+            <h4 class="font-bold text-palette-deep-blue mt-4 mb-2">💼 Use Case</h4>
+            <p class="text-sm text-gray-700 p-2 bg-palette-bg rounded-lg">Mapping shows a **Pain Point** where technical Q&A takes 24 hours. You fix this by creating a new protocol: the **SE** is alerted immediately during any demo to answer technical questions live, making the process smoother.</p>
+          </div>
+          <div class="chart-container">
+            <h4 class="text-center text-sm font-semibold text-gray-700">Average Touchpoints to Closed Deal</h4>
+            <canvas id="w3d2Chart"></canvas>
+          </div>
+        </div>
+      </section>
+
+      <section id="w3d3" class="day-card bg-white rounded-lg shadow-xl p-6 mb-8">
+        <h3 class="text-2xl font-bold text-palette-bright-blue mb-4">Day 3 | Topic: CRM Fundamentals (HubSpot, Salesforce)</h3>
+        <p class="text-gray-600 mb-6">**Story:** Your **CRM** is the single most important tool in your professional life. It’s the brain of your sales organization—it tracks every conversation, forecasts revenue, and ensures flawless execution. Proficiency in these tools is mandatory for success.</p>
+        
+        <div class="grid md:grid-cols-2 gap-6 items-center">
+          <div>
+            <h4 class="font-bold text-palette-deep-blue mb-2">📘 Key Terms</h4>
+            <ul class="list-disc list-inside text-sm space-y-1">
+              <li>**CRM:** Technology managing all customer interactions and data.</li>
+              <li>**Salesforce / HubSpot:** Industry-standard CRM platforms.</li>
+              <li>**Data Hygiene:** Practice of ensuring accurate, clean, and up-to-date data.</li>
+            </ul>
+            <h4 class="font-bold text-palette-deep-blue mt-4 mb-2">💼 Use Case</h4>
+            <p class="text-sm text-gray-700 p-2 bg-palette-bg rounded-lg">Before a big renewal meeting, you check the **CRM** and notice the customer hasn't logged in for six weeks (bad **Data Hygiene**). You pivot the conversation to adoption issues to proactively solve the problem before it leads to churn.</p>
+          </div>
+          <div class="chart-container">
+            <h4 class="text-center text-sm font-semibold text-gray-700">Deal Management Reliability</h4>
+            <canvas id="w3d3Chart"></canvas>
+          </div>
+        </div>
+      </section>
+
+      <section id="w3d4" class="day-card bg-white rounded-lg shadow-xl p-6 mb-8">
+        <h3 class="text-2xl font-bold text-palette-bright-blue mb-4">Day 4 | Topic: Pipeline Management, Quota Setting, Forecasting KPIs</h3>
+        <p class="text-gray-600 mb-6">**Story:** Your job is to be predictable. **Pipeline Management** organizes active deals to ensure you hit your **Quota**. This requires tracking key metrics (**KPIs**) and using them to create a reliable revenue **Forecast**. Hitting your Quota is the key to career growth.</p>
+        
+        <div class="grid md:grid-cols-2 gap-6 items-center">
+          <div>
+            <h4 class="font-bold text-palette-deep-blue mb-2">📘 Key Terms</h4>
+            <ul class="list-disc list-inside text-sm space-y-1">
+              <li>**Sales Pipeline:** Visual representation of all active sales opportunities.</li>
+              <li>**Quota:** The minimum sales revenue target you must achieve.</li>
+              <li>**Forecasting:** Predicting future sales revenue based on deal probability.</li>
+            </ul>
+            <h4 class="font-bold text-palette-deep-blue mt-4 mb-2">💼 Use Case</h4>
+            <p class="text-sm text-gray-700 p-2 bg-palette-bg rounded-lg">Your **Quota** is $150K, but your weighted **Forecast** is only $120K. You immediately identify the $30K gap and spend the week focused only on two "stuck" deals to close the deficit.</p>
+          </div>
+          <div class="chart-container">
+            <h4 class="text-center text-sm font-semibold text-gray-700">Quota vs. Forecast vs. Pipeline ($K)</h4>
+            <canvas id="w3d4Chart"></canvas>
+          </div>
+        </div>
+      </section>
+
+      <section id="w3d5" class="day-card bg-white rounded-lg shadow-xl p-6 mb-8">
+        <h3 class="text-2xl font-bold text-palette-bright-blue mb-4">Day 5 | Topic: Strategic Pipeline Management & Funnel Building</h3>
+        <p class="text-gray-600 mb-6">**Story:** We apply strategy to the process. This means actively designing CRM **Workflows** to nurture leads and build your personal **Sales Funnel** strategy. You learn to make the CRM do the heavy lifting, ensuring the right content is delivered at the right time.</p>
+        
+        <div class="grid md:grid-cols-2 gap-6 items-center">
+          <div>
+            <h4 class="font-bold text-palette-deep-blue mb-2">📘 Key Terms</h4>
+            <ul class="list-disc list-inside text-sm space-y-1">
+              <li>**Workflow:** Automated sequence of steps/actions triggered by prospect behavior.</li>
+              <li>**Lead Nurturing:** Providing targeted information to keep prospects engaged.</li>
+              <li>**GTM Strategy:** Action plan for reaching target customers.</li>
+            </ul>
+            <h4 class="font-bold text-palette-deep-blue mt-4 mb-2">💼 Use Case</h4>
+            <p class="text-sm text-gray-700 p-2 bg-palette-bg rounded-lg">You notice leads who download a **MOFU** case study often forget to schedule a demo. You create a CRM **Workflow** that automatically sends a reminder email 48 hours later, increasing your demo booking rate by 15%.</p>
+          </div>
+          <div class="flex flex-col h-full justify-center space-y-3">
+            <h4 class="text-center text-sm font-semibold text-gray-700">Automated Nurturing Workflow</h4>
+            <div class="p-3 bg-palette-lighter-blue rounded-lg shadow text-center">
+                <p class="text-sm font-bold text-palette-deep-blue">Lead Clicks Case Study</p>
+            </div>
+            <p class="text-xl text-palette-blue text-center font-bold">⬇️ (Trigger)</p>
+            <div class="p-3 bg-palette-blue rounded-lg shadow text-center text-white">
+                <p class="text-sm font-bold">CRM Adds to 'Demo Nurture' List</p>
+            </div>
+            <p class="text-xl text-palette-blue text-center font-bold">⬇️ (Action)</p>
+            <div class="p-3 bg-palette-deep-blue rounded-lg shadow text-center text-white">
+                <p class="text-sm font-bold">Sends Automated Demo Reminder</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    
+    <div id="week-4" class="pt-8">
+      <h2 class="text-4xl font-extrabold text-palette-deep-blue border-b-4 border-palette-light-blue pb-3 mb-10 text-center">
+        Week 4: Selling with Data & Artificial Intelligence
+      </h2>
+
+      <section id="w4d1" class="day-card bg-white rounded-lg shadow-xl p-6 mb-8">
+        <h3 class="text-2xl font-bold text-palette-bright-blue mb-4">Day 1 | Topic: How Data Drives the Sales Process</h3>
+        <p class="text-gray-600 mb-6">**Story:** Sales used to be based on intuition, but today, **Sales Data** provides hard evidence for every decision. Tracking customer behavior allows you to move from guessing who to call to knowing exactly who needs your attention. Data is your greatest strategic advantage.</p>
+        
+        <div class="grid md:grid-cols-2 gap-6 items-center">
+          <div>
+            <h4 class="font-bold text-palette-deep-blue mb-2">📘 Key Terms</h4>
+            <ul class="list-disc list-inside text-sm space-y-1">
+              <li>**Sales Data:** Measurable info on customer behavior and deal progression.</li>
+              <li>**Conversion Rate:** Percentage of prospects moving to the next stage.</li>
+              <li>**Data-Driven:** Using facts/metrics, not gut feeling, for strategy.</li>
+            </ul>
+            <h4 class="font-bold text-palette-deep-blue mt-4 mb-2">💼 Use Case</h4>
+            <p class="text-sm text-gray-700 p-2 bg-palette-bg rounded-lg">**Sales Data** shows webinar attendees have a 30% **Conversion Rate**, but whitepaper readers have 10%. You immediately shift all outreach budget to promoting webinars, maximizing your success using **Data-Driven Decision Making**.</p>
+          </div>
+          <div class="chart-container">
+            <h4 class="text-center text-sm font-semibold text-gray-700">Data Impact Ranking</h4>
+            <canvas id="w4d1Chart"></canvas>
+          </div>
+        </div>
+      </section>
+
+      <section id="w4d2" class="day-card bg-white rounded-lg shadow-xl p-6 mb-8">
+        <h3 class="text-2xl font-bold text-palette-bright-blue mb-4">Day 2 | Topic: Lead Scoring, Dashboards, Sales KPIs</h3>
+        <p class="text-gray-600 mb-6">**Story:** If you have 100 leads, you can't call them all. **Lead Scoring** uses data to prioritize your time. You track these scores, along with your other sales metrics (**KPIs**), using simple, visual **Dashboards**, giving you an aerial view of your performance.</p>
+        
+        <div class="grid md:grid-cols-2 gap-6 items-center">
+          <div>
+            <h4 class="font-bold text-palette-deep-blue mb-2">📘 Key Terms</h4>
+            <ul class="list-disc list-inside text-sm space-y-1">
+              <li>**Lead Scoring:** Ranking prospects (1-100) based on engagement and fit.</li>
+              <li>**Dashboard:** Real-time visual display of key business metrics (KPIs).</li>
+              <li>**KPI:** A metric measuring how effectively you achieve an objective.</li>
+            </ul>
+            <h4 class="font-bold text-palette-deep-blue mt-4 mb-2">💼 Use Case</h4>
+            <p class="text-sm text-gray-700 p-2 bg-palette-bg rounded-lg">The **Dashboard** shows the "Demos Booked" KPI is low. You review **Lead Scoring** and adjust the rules to give 'Marketing' titles 20 extra points, immediately generating 15 "hot" leads to call and close the KPI gap.</p>
+          </div>
+          <div class="chart-container">
+            <h4 class="text-center text-sm font-semibold text-gray-700">Sample Hot Lead Score</h4>
+            <canvas id="w4d2Chart"></canvas>
+          </div>
+        </div>
+      </section>
+
+      <section id="w4d3" class="day-card bg-white rounded-lg shadow-xl p-6 mb-8">
+        <h3 class="text-2xl font-bold text-palette-bright-blue mb-4">Day 3 | Topic: Revenue Forecasting Using CRM Data</h3>
+        <p class="text-gray-600 mb-6">**Story:** Predicting revenue is the most valuable skill you can give a manager. **Revenue Forecasting** uses deals in your CRM and multiplies their value by their **Close Probability** to give a scientifically backed prediction of future income. Reliable forecasting builds credibility.</p>
+        
+        <div class="grid md:grid-cols-2 gap-6 items-center">
+          <div>
+            <h4 class="font-bold text-palette-deep-blue mb-2">📘 Key Terms</h4>
+            <ul class="list-disc list-inside text-sm space-y-1">
+              <li>**Revenue Forecasting:** Estimating future sales revenue over a period.</li>
+              <li>**Close Probability:** Percentage likelihood a deal in a stage will close.</li>
+              <li>**Commitment:** Deals the rep is highly confident will close (high probability).</li>
+            </ul>
+            <h4 class="font-bold text-palette-deep-blue mt-4 mb-2">💼 Use Case</h4>
+            <p class="text-sm text-gray-700 p-2 bg-palette-bg rounded-lg">A $50,000 deal moves from "Proposal" (70% probability) to "Verbal Agreement." Because you mark it as **Commitment**, the **Revenue Forecasting** system adds a high-confidence $50,000 to the monthly total, allowing management to plan for hiring.</p>
+          </div>
+          <div class="chart-container">
+            <h4 class="text-center text-sm font-semibold text-gray-700">Deal Velocity vs. Deal Size</h4>
+            <canvas id="w4d3Chart"></canvas>
+          </div>
+        </div>
+      </section>
+
+      <section id="w4d4" class="day-card bg-white rounded-lg shadow-xl p-6 mb-8">
+        <h3 class="text-2xl font-bold text-palette-bright-blue mb-4">Day 4 | Topic: Using AI for Lead Generation, Personalization, and Outreach</h3>
+        <p class="text-gray-600 mb-6">**Story:** AI isn't here to replace you; it's here to empower you. AI helps with **Lead Generation** by finding the perfect buyer, enables hyper-**Personalization** by writing tailored messages, and scales your **Outreach**. You move from a generalist salesperson to a targeted sales machine.</p>
+        
+        <div class="grid md:grid-cols-2 gap-6 items-center">
+          <div>
+            <h4 class="font-bold text-palette-deep-blue mb-2">📘 Key Terms</h4>
+            <ul class="list-disc list-inside text-sm space-y-1">
+              <li>**Lead Generation:** Identifying and attracting perfect customer profiles.</li>
+              <li>**Personalization:** Customizing messages to specific client challenges.</li>
+              <li>**Outreach:** The initial effort to contact a prospect (calls, emails).</li>
+            </ul>
+            <h4 class="font-bold text-palette-deep-blue mt-4 mb-2">💼 Use Case</h4>
+            <p class="text-sm text-gray-700 p-2 bg-palette-bg rounded-lg">An AI tool finds a target company undergoing a merger. This triggers an alert. You use generative AI to draft an email referencing the merger risk (**Personalization**), ensuring your **Outreach** is timely and highly relevant.</p>
+          </div>
+          <div class="chart-container">
+            <h4 class="text-center text-sm font-semibold text-gray-700">AI's Contribution to Outreach</h4>
+            <canvas id="w4d4Chart"></canvas>
+          </div>
+        </div>
+      </section>
+
+      <section id="w4d5" class="day-card bg-white rounded-lg shadow-xl p-6 mb-8">
+        <h3 class="text-2xl font-bold text-palette-bright-blue mb-4">Day 5 | Topic: AI Tools: ChatGPT, Crystal Knows, Apollo AI, ZoomInfo and alike</h3>
+        <p class="text-gray-600 mb-6">**Story:** We end by getting hands-on with the specific AI tools that will define your career. From using **ChatGPT** to draft emails, to **ZoomInfo** for direct numbers, these tools are your competitive edge. You learn to use a full AI toolkit to craft the perfect outreach strategy before you even pick up the phone.</p>
+        
+        <div class="grid md:grid-cols-2 gap-6 items-center">
+          <div>
+            <h4 class="font-bold text-palette-deep-blue mb-2">📘 Key Terms</h4>
+            <ul class="list-disc list-inside text-sm space-y-1">
+              <li>**ChatGPT (LLM):** Used to generate, summarize, or refine text.</li>
+              <li>**ZoomInfo / Apollo AI:** Databases for verified contact information.</li>
+              <li>**Crystal Knows:** Analyzes text to predict communication style/personality.</li>
+            </ul>
+            <h4 class="font-bold text-palette-deep-blue mt-4 mb-2">💼 Use Case</h4>
+            <p class="text-sm text-gray-700 p-2 bg-palette-bg rounded-lg">You use **ZoomInfo** for a client's number, **Crystal Knows** to learn they prefer a direct "Challenger" style, and then use **ChatGPT** to generate an opening line that is concise and data-backed. You approach the call with a highly customized, AI-informed strategy.</p>
+          </div>
+          <div class="flex flex-col h-full justify-center space-y-3">
+            <h4 class="text-center text-sm font-semibold text-gray-700">The AI Research Toolkit</h4>
+            <div class="grid grid-cols-3 gap-2 text-center">
+                <div class="p-3 bg-palette-bg rounded-lg shadow">
+                    <span class="text-2xl text-palette-deep-blue">📝</span>
+                    <p class="text-xs font-bold mt-1">ChatGPT (Drafting)</p>
+                </div>
+                <div class="p-3 bg-palette-bg rounded-lg shadow">
+                    <span class="text-2xl text-palette-deep-blue">👤</span>
+                    <p class="text-xs font-bold mt-1">Crystal Knows (Style)</p>
+                </div>
+                <div class="p-3 bg-palette-bg rounded-lg shadow">
+                    <span class="text-2xl text-palette-deep-blue">📞</span>
+                    <p class="text-xs font-bold mt-1">ZoomInfo (Contact)</p>
+                </div>
+            </div>
+            <p class="text-center text-xs text-gray-500 mt-2">The combination of these tools maximizes connection rate.</p>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <div id="week-5" class="pt-8">
+      <h2 class="text-4xl font-extrabold text-palette-deep-blue border-b-4 border-palette-light-blue pb-3 mb-10 text-center">
+        Week 5: Product Demos, Value Selling & Objection Handling
+      </h2>
+
+      <section id="w5d1" class="day-card bg-white rounded-lg shadow-xl p-6 mb-8">
+        <h3 class="text-2xl font-bold text-palette-bright-blue mb-4">Day 1 | Topic: Introduction to Chalk Talks</h3>
+        <p class="text-gray-600 mb-6">**Story:** A **Chalk Talk** is a visual, conceptual whiteboard session that frames a problem before you show the product. It’s a powerful tool to take control of the conversation, establish yourself as a thought leader, and align the customer's pain with your solution's value proposition. This moves the focus from features to business outcomes.</p>
+        
+        <div class="grid md:grid-cols-2 gap-6">
+          <div>
+            <h4 class="font-bold text-palette-deep-blue mb-2">📘 Key Terms</h4>
+            <ul class="list-disc list-inside text-sm space-y-1">
+              <li>**Chalk Talk:** A conceptual, non-product presentation used to align on pain/solution.</li>
+              <li>**Conceptual Selling:** Focusing on the buyer's concepts and problems, not product specifications.</li>
+              <li>**Whiteboarding:** Using diagrams to visually explain complex processes and how your product fits.</li>
+            </ul>
+            <h4 class="font-bold text-palette-deep-blue mt-4 mb-2">💼 Use Case</h4>
+            <p class="text-sm text-gray-700 p-2 bg-palette-bg rounded-lg">Before starting the software demo, you draw a high-level diagram of the client's current process and point out the "bottlenecks," establishing a shared understanding of the problem that your solution is explicitly designed to solve.</p>
+          </div>
+          <div class="chart-container">
+            <h4 class="text-center text-sm font-semibold text-gray-700">W5 Focus: Conceptual vs. Feature Time</h4>
+            <canvas id="w5d1Chart"></canvas>
+          </div>
+        </div>
+      </section>
+
+      <section id="w5d2" class="day-card bg-white rounded-lg shadow-xl p-6 mb-8">
+        <h3 class="text-2xl font-bold text-palette-bright-blue mb-4">Day 2 | Topic: Value-First vs. Feature-First Selling</h3>
+        <p class="text-gray-600 mb-6">**Story:** Amateurs sell features ("What it does"). Professionals sell **Value** ("Why you should care"). **Value-First Selling** requires that every feature demonstrated is immediately translated into a tangible business benefit—be it increased revenue, reduced risk, or saved time. This is key to differentiating yourself from the competition.</p>
+        
+        <div class="grid md:grid-cols-2 gap-6 items-center">
+          <div>
+            <h4 class="font-bold text-palette-deep-blue mb-2">📘 Key Terms</h4>
+            <ul class="list-disc list-inside text-sm space-y-1">
+              <li>**Value-First:** Demonstrating the ROI or benefit before detailing the technical feature.</li>
+              <li>**Feature-First:** Describing product functionality without translating it into a customer benefit.</li>
+              <li>**ROI Justification:** Quantifying the return on investment the client will receive.</li>
+            </ul>
+            <h4 class="font-bold text-palette-deep-blue mt-4 mb-2">💼 Use Case</h4>
+            <p class="text-sm text-gray-700 p-2 bg-palette-bg rounded-lg">Instead of saying, "This tool integrates with 20 systems," you say, "This integration saves your team 10 hours a week on manual data entry, which is the equivalent of adding a part-time employee to your finance department (**Value-First**)."</p>
+          </div>
+          <div class="chart-container">
+            <h4 class="text-center text-sm font-semibold text-gray-700">Impact of Value-First Selling on Close Rate</h4>
+            <canvas id="w5d2Chart"></canvas>
+          </div>
+        </div>
+      </section>
+
+      <section id="w5d3" class="day-card bg-white rounded-lg shadow-xl p-6 mb-8">
+        <h3 class="text-2xl font-bold text-palette-bright-blue mb-4">Day 3 | Topic: How to Run Live and Recorded Demos</h3>
+        <p class="text-gray-600 mb-6">**Story:** A flawless **Demo** is the difference between an interested prospect and a committed buyer. You must master the logistics of both **Live Demos** (where interaction is key) and professional **Recorded Demos** (for scale and consistency). A well-executed demo follows a structured framework tailored to the buyer's specific pain points.</p>
+        
+        <div class="grid md:grid-cols-2 gap-6 items-center">
+          <div>
+            <h4 class="font-bold text-palette-deep-blue mb-2">📘 Key Terms</h4>
+            <ul class="list-disc list-inside text-sm space-y-1">
+              <li>**Live Demo:** Interactive, customized product presentation with real-time feedback.</li>
+              <li>**Recorded Demo:** Pre-recorded, high-production video used for top-of-funnel education.</li>
+              <li>**Pre-Discovery:** The required step to tailor the demo script to the customer's specific needs.</li>
+            </ul>
+            <h4 class="font-bold text-palette-deep-blue mt-4 mb-2">💼 Use Case</h4>
+            <p class="text-sm text-gray-700 p-2 bg-palette-bg rounded-lg">After a discovery call, you use the prospect's logo and industry data to create a custom-branded **Recorded Demo**. This makes the solution immediately relevant, significantly increasing the likelihood of securing the next meeting.</p>
+          </div>
+          <div class="flex flex-col justify-center items-center h-full w-full max-w-sm mx-auto">
+            <h4 class="text-center text-sm font-semibold text-gray-700">Demo Production Quality vs. Personalization</h4>
+            <div class="chart-container w-full h-full"> 
+                <canvas id="w5d3Chart"></canvas>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="w5d4" class="day-card bg-white rounded-lg shadow-xl p-6 mb-8">
+        <h3 class="text-2xl font-bold text-palette-bright-blue mb-4">Day 4 | Topic: Demo Storytelling Frameworks</h3>
+        <p class="text-gray-600 mb-6">**Story:** A demo that is just a series of clicks is boring. A great demo is a story. Using a structured **Storytelling Framework** (e.g., Problem-Agitate-Solve) keeps the buyer engaged by consistently bringing the narrative back to their original **Pain Point**. This makes the solution memorable and emotionally resonant.</p>
+        
+        <div class="grid md:grid-cols-2 gap-6 items-center">
+          <div>
+            <h4 class="font-bold text-palette-deep-blue mb-2">📘 Key Terms</h4>
+            <ul class="list-disc list-inside text-sm space-y-1">
+              <li>**Storytelling Frameworks:** Techniques (like PAS) used to structure a narrative around the demo.</li>
+              <li>**Pain Point:** The specific, negative business problem the customer is facing.</li>
+              <li>**Resolution:** The clear, positive outcome achieved by adopting your solution.</li>
+            </ul>
+            <h4 class="font-bold text-palette-deep-blue mt-4 mb-2">💼 Use Case</h4>
+            <p class="text-sm text-gray-700 p-2 bg-palette-bg rounded-lg">You open the demo by stating the high cost of the client's current process (**Problem**). You then show how those errors lead to executive frustration (**Agitate**), and finally, demonstrate the two clicks that eliminate the problem (**Solve**).</p>
+          </div>
+          <div class="chart-container">
+            <h4 class="text-center text-sm font-semibold text-gray-700">Demo Structure: Time on Problem vs. Solution</h4>
+            <canvas id="w5d4Chart"></canvas>
+          </div>
+        </div>
+      </section>
+
+      <section id="w5d5" class="day-card bg-white rounded-lg shadow-xl p-6 mb-8">
+        <h3 class="text-2xl font-bold text-palette-bright-blue mb-4">Day 5 | Topic: Handling Technical and Non-Technical Objections</h3>
+        <p class="text-gray-600 mb-6">**Story:** Every deal will hit an obstacle. You must master the art of addressing **Technical Objections** (e.g., "Will it integrate?") and **Non-Technical Objections** (e.g., "The price is too high"). The key is to never argue, but to isolate the true concern and re-anchor the conversation to the ROI and **Value**. This practice is a core part of the Soft Skills Module.</p>
+        
+        <div class="grid md:grid-cols-2 gap-6 items-center">
+          <div>
+            <h4 class="font-bold text-palette-deep-blue mb-2">📘 Key Terms</h4>
+            <ul class="list-disc list-inside text-sm space-y-1">
+              <li>**Technical Objection:** Concerns related to feasibility, integration, or security.</li>
+              <li>**Non-Technical Objection:** Concerns related to price, timing, or budget.</li>
+              <li>**Isolate & Re-Anchor:** Technique to confirm the true objection before providing the value-based counter-argument.</li>
+            </ul>
+            <h4 class="font-bold text-palette-deep-blue mt-4 mb-2">💼 Use Case</h4>
+            <p class="text-sm text-gray-700 p-2 bg-palette-bg rounded-lg">Customer: "We're worried about implementation time" (**Technical Objection**). You respond: "I hear you; if we could deploy in 10 days, would you be ready to move forward?" (Isolate), allowing you to immediately introduce the pre-built API (Re-Anchor).</p>
+          </div>
+          <div class="chart-container">
+            <h4 class="text-center text-sm font-semibold text-gray-700">W5 Focus: Objection Type Frequency</h4>
+            <canvas id="w5d5Chart"></canvas>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <div id="week-6" class="pt-8">
+      <h2 class="text-4xl font-extrabold text-palette-deep-blue border-b-4 border-palette-light-blue pb-3 mb-10 text-center">
+        Week 6: Prospecting, Proof of Concepts (POCs), and Trust Building
+      </h2>
+
+      <section id="w6d1" class="day-card bg-white rounded-lg shadow-xl p-6 mb-8">
+        <h3 class="text-2xl font-bold text-palette-bright-blue mb-4">Day 1 | Topic: Effective Outbound Prospecting Strategies</h3>
+        <p class="text-gray-600 mb-6">**Story:** Great sales reps don't wait for leads; they create them. **Outbound Prospecting** is the proactive search for new clients using cold calls, personalized email sequences, and LinkedIn engagement. Mastering these **strategies** ensures a consistently full sales pipeline and predictable revenue growth.</p>
+        
+        <div class="grid md:grid-cols-2 gap-6">
+          <div>
+            <h4 class="font-bold text-palette-deep-blue mb-2">📘 Key Terms</h4>
+            <ul class="list-disc list-inside text-sm space-y-1">
+              <li>**Outbound Prospecting:** Proactive efforts to contact potential customers (cold outreach).</li>
+              <li>**Personalization:** Customizing outreach content to a prospect's specific role, industry, or company news.</li>
+              <li>**Sequence/Cadence:** A timed series of touchpoints (email, call, social) to engage a prospect.</li>
+            </ul>
+            <h4 class="font-bold text-palette-deep-blue mt-4 mb-2">💼 Use Case</h4>
+            <p class="text-sm text-gray-700 p-2 bg-palette-bg rounded-lg">You research a prospect who just switched jobs. You create a three-touch **Sequence** beginning with a highly **personalized** email acknowledging their new role and offering a solution to a problem common to new leaders.</p>
+          </div>
+          <div class="chart-container">
+            <h4 class="text-center text-sm font-semibold text-gray-700">W6 Focus: Outbound Channels by Effectiveness</h4>
+            <canvas id="w6d1Chart"></canvas>
+          </div>
+        </div>
+      </section>
+
+      <section id="w6d2" class="day-card bg-white rounded-lg shadow-xl p-6 mb-8">
+        <h3 class="text-2xl font-bold text-palette-bright-blue mb-4">Day 2 | Topic: Managing Proof of Concepts (POCs)</h3>
+        <p class="text-gray-600 mb-6">**Story:** A **Proof of Concept (POC)** is a structured test that proves your solution delivers the promised value in the client's real-world environment. A successful **POC** has clearly defined, measurable goals (KPIs) and a strict timeline, removing all risk and clearing the path for the final contract.</p>
+        
+        <div class="grid md:grid-cols-2 gap-6 items-center">
+          <div>
+            <h4 class="font-bold text-palette-deep-blue mb-2">📘 Key Terms</h4>
+            <ul class="list-disc list-inside text-sm space-y-1">
+              <li>**POC (Proof of Concept):** A short-term, measurable test of the solution.</li>
+              <li>**Success Criteria:** Pre-defined metrics (KPIs) that determine if the POC is successful.</li>
+              <li>**Exit Criteria:** The conditions under which the client agrees to move to contract post-POC.</li>
+            </ul>
+            <h4 class="font-bold text-palette-deep-blue mt-4 mb-2">💼 Use Case</h4>
+            <p class="text-sm text-gray-700 p-2 bg-palette-bg rounded-lg">You set the **Success Criteria** for a 30-day **POC** as "The system must process 1,000 transactions with 99.9% accuracy." Meeting this measurable goal makes the final purchasing decision a simple formality.</p>
+          </div>
+          <div class="chart-container">
+            <h4 class="text-center text-sm font-semibold text-gray-700">POC Success Rate by Defined Criteria</h4>
+            <canvas id="w6d2Chart"></canvas>
+          </div>
+        </div>
+      </section>
+
+      <section id="w6d3" class="day-card bg-white rounded-lg shadow-xl p-6 mb-8">
+        <h3 class="text-2xl font-bold text-palette-bright-blue mb-4">Day 3 | Topic: Creating Webinars, Whitepapers, and Trust Assets</h3>
+        <p class="text-gray-600 mb-6">**Story:** In digital sales, your **Trust Assets** build credibility before you even speak to a customer. **Whitepapers** (for deep-dive research) and **Webinars** (for scaled education) act as lead magnets, turning passive researchers into engaged prospects who already trust your expertise.</p>
+        
+        <div class="grid md:grid-cols-2 gap-6 items-center">
+          <div>
+            <h4 class="font-bold text-palette-deep-blue mb-2">📘 Key Terms</h4>
+            <ul class="list-disc list-inside text-sm space-y-1">
+              <li>**Trust Assets:** Content (case studies, reports) designed to establish authority and trust.</li>
+              <li>**Whitepaper:** A detailed, authoritative report on a specific business problem and solution.</li>
+              <li>**Lead Magnet:** High-value content offered in exchange for a prospect's contact information.</li>
+            </ul>
+            <h4 class="font-bold text-palette-deep-blue mt-4 mb-2">💼 Use Case</h4>
+            <p class="text-sm text-gray-700 p-2 bg-palette-bg rounded-lg">A prospect downloads your **Whitepaper** on new compliance risks. This action identifies them as a high-intent lead, allowing you to follow up with a personalized email referencing the specific solution outlined in the paper.</p>
+          </div>
+          <div class="flex flex-col justify-center items-center h-full w-full max-w-sm mx-auto">
+            <h4 class="text-center text-sm font-semibold text-gray-700">Trust Asset Conversion Funnel</h4>
+            <div class="chart-container w-full h-full"> 
+                <canvas id="w6d3Chart"></canvas>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="w6d4" class="day-card bg-white rounded-lg shadow-xl p-6 mb-8">
+        <h3 class="text-2xl font-bold text-palette-bright-blue mb-4">Day 4 | Topic: Leveraging Video Prospecting Tools: Loom, Calendly, Canva</h3>
+        <p class="text-gray-600 mb-6">**Story:** Modern prospecting is visual and personal. Tools like **Loom** for personalized video, **Calendly** for easy scheduling, and **Canva** for quick asset creation are mandatory for high-performing reps. Using **Video Prospecting** significantly increases response rates and cuts through email noise.</p>
+        
+        <div class="grid md:grid-cols-2 gap-6 items-center">
+          <div>
+            <h4 class="font-bold text-palette-deep-blue mb-2">📘 Key Terms</h4>
+            <ul class="list-disc list-inside text-sm space-y-1">
+              <li>**Video Prospecting:** Using short, personalized videos (e.g., via Loom) in outreach.</li>
+              <li>**Asynchronous Communication:** Exchanging messages/videos without requiring a simultaneous conversation.</li>
+              <li>**Frictionless Scheduling:** Using tools (e.g., Calendly) to allow prospects to book time instantly.</li>
+            </ul>
+            <h4 class="font-bold text-palette-deep-blue mt-4 mb-2">💼 Use Case</h4>
+            <p class="text-sm text-gray-700 p-2 bg-palette-bg rounded-lg">Instead of a long email, you send a 30-second **Loom** video, addressing the prospect by name and referencing their LinkedIn profile. You end the video with a **Calendly** link, making the next step completely **frictionless**.</p>
+          </div>
+          <div class="chart-container">
+            <h4 class="text-center text-sm font-semibold text-gray-700">Video Prospecting: Response Rate Increase</h4>
+            <canvas id="w6d4Chart"></canvas>
+          </div>
+        </div>
+      </section>
+
+      <section id="w6d5" class="day-card bg-white rounded-lg shadow-xl p-6 mb-8">
+        <h3 class="text-2xl font-bold text-palette-bright-blue mb-4">Day 5 | Topic: Building Sales Sequences and Call Scripts</h3>
+        <p class="text-gray-600 mb-6">**Story:** Successful outreach is a repeatable process, not a lucky guess. We learn how to design a full, multi-channel **Sales Sequence** (email, social, call) and write flexible **Call Scripts** that act as guides, not rigid monologues. This ensures consistency and maximizes the probability of conversion at every stage of prospecting.</p>
+        
+        <div class="grid md:grid-cols-2 gap-6 items-center">
+          <div>
+            <h4 class="font-bold text-palette-deep-blue mb-2">📘 Key Terms</h4>
+            <ul class="list-disc list-inside text-sm space-y-1">
+              <li>**Sales Sequence:** An automated or manual multi-step outreach plan.</li>
+              <li>**Call Scripts:** Structured guides for phone conversations, focusing on key questions and value points.</li>
+              <li>**A/B Testing:** Experimenting with two versions of a sequence/script to see which performs better.</li>
+            </ul>
+            <h4 class="font-bold text-palette-deep-blue mt-4 mb-2">💼 Use Case</h4>
+            <p class="text-sm text-gray-700 p-2 bg-palette-bg rounded-lg">You find that your current **Sequence** has a high email open rate but low reply rate. You change the third touch point from a generic email to a highly specific **Call Script** focused on a competitor's weakness, immediately lifting the reply rate.</p>
+          </div>
+          <div class="chart-container">
+            <h4 class="text-center text-sm font-semibold text-gray-700">Sequence Performance by Touchpoint</h4>
+            <canvas id="w6d5Chart"></canvas>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <div id="week-7" class="pt-8">
+      <h2 class="text-4xl font-extrabold text-palette-deep-blue border-b-4 border-palette-light-blue pb-3 mb-10 text-center">
+        Week 7: Sector Sprint: HealthTech Sales
+      </h2>
+
+      <section id="w7d1" class="day-card bg-white rounded-lg shadow-xl p-6 mb-8">
+        <h3 class="text-2xl font-bold text-palette-bright-blue mb-4">Day 1 | Topic: Health Tech Regulations, Privacy, and Trust Barriers</h3>
+        <p class="text-gray-600 mb-6">**Story:** Selling HealthTech is selling in a minefield of compliance. Regulations like **HIPAA** in the US create significant **Trust Barriers** and a focus on **Privacy**. Your primary sales focus shifts from pure ROI to **Risk Mitigation** and guaranteeing strict data compliance.</p>
+        
+        <div class="grid md:grid-cols-2 gap-6">
+          <div>
+            <h4 class="font-bold text-palette-deep-blue mb-2">📘 Key Terms</h4>
+            <ul class="list-disc list-inside text-sm space-y-1">
+              <li>**HIPAA (Health Insurance Portability and Accountability Act):** Core US data privacy regulation.</li>
+              <li>**BIPA (Business Associate Agreement):** A contract required when handling protected health information.</li>
+              <li>**Risk Mitigation:** The sales goal of reducing the client's exposure to regulatory fines or data breaches.</li>
+            </ul>
+            <h4 class="font-bold text-palette-deep-blue mt-4 mb-2">💼 Use Case</h4>
+            <p class="text-sm text-gray-700 p-2 bg-palette-bg rounded-lg">A hospital CIO expresses concern about cloud security. You counter by stating that your platform is fully **HIPAA-compliant**, and you provide a pre-signed **BIPA**, immediately addressing the top **Trust Barrier** with proof of compliance.</p>
+          </div>
+          <div class="chart-container">
+            <h4 class="text-center text-sm font-semibold text-gray-700">W7 Focus: HealthTech Buyer Concerns</h4>
+            <canvas id="w7d1Chart"></canvas>
+          </div>
+        </div>
+      </section>
+
+      <section id="w7d2" class="day-card bg-white rounded-lg shadow-xl p-6 mb-8">
+        <h3 class="text-2xl font-bold text-palette-bright-blue mb-4">Day 2 | Topic: Selling B2B2C Solutions in Healthcare</h3>
+        <p class="text-gray-600 mb-6">**Story:** Many HealthTech solutions are **B2B2C**, meaning you sell to the organization (B2B, e.g., a hospital) whose primary goal is improving the experience of the end-user (B2C, e.g., the patient). Your pitch must satisfy the hospital's financial needs *and* the patient's desire for better care.</p>
+        
+        <div class="grid md:grid-cols-2 gap-6 items-center">
+          <div>
+            <h4 class="font-bold text-palette-deep-blue mb-2">📘 Key Terms</h4>
+            <ul class="list-disc list-inside text-sm space-y-1">
+              <li>**B2B2C (Business-to-Business-to-Consumer):** Selling a tool to a business that directly impacts their end-customer.</li>
+              <li>**Patient Engagement:** The degree to which patients actively manage their health (often technology-driven).</li>
+              <li>**Interoperability:** The ability of different IT systems (e.g., clinics and insurers) to share data seamlessly.</li>
+            </ul>
+            <h4 class="font-bold text-palette-deep-blue mt-4 mb-2">💼 Use Case</h4>
+            <p class="text-sm text-gray-700 p-2 bg-palette-bg rounded-lg">Pitching a telehealth platform to a clinic: "Your ROI comes from the 30% reduction in missed appointments (**B2B**), but the real **value** is the 90% higher patient satisfaction score due to ease of use (**B2C**)."</p>
+          </div>
+          <div class="chart-container">
+            <h4 class="text-center text-sm font-semibold text-gray-700">B2B2C: Financial vs. Patient Outcome Focus</h4>
+            <canvas id="w7d2Chart"></canvas>
+          </div>
+        </div>
+      </section>
+
+      <section id="w7d3" class="day-card bg-white rounded-lg shadow-xl p-6 mb-8">
+        <h3 class="text-2xl font-bold text-palette-bright-blue mb-4">Day 3 | Topic: Patient Engagement Platforms & EHR Integrations</h3>
+        <p class="text-gray-600 mb-6">**Story:** The core of hospital IT is the **EHR (Electronic Health Record)** system. If your platform doesn't seamlessly integrate with the EHR, you lose. You must sell the simplicity of your integration and how it directly improves **Patient Engagement** (e.g., through portals, automated follow-up) without disrupting the crucial patient data flow.</p>
+        
+        <div class="grid md:grid-cols-2 gap-6 items-center">
+          <div>
+            <h4 class="font-bold text-palette-deep-blue mb-2">📘 Key Terms</h4>
+            <ul class="list-disc list-inside text-sm space-y-1">
+              <li>**EHR (Electronic Health Record):** The core clinical data system used by providers.</li>
+              <li>**API Integration:** The technical connection that allows seamless data sharing with the EHR.</li>
+              <li>**Patient Portal:** A digital platform for patients to access records, schedule, and communicate with providers.</li>
+            </ul>
+            <h4 class="font-bold text-palette-deep-blue mt-4 mb-2">💼 Use Case</h4>
+            <p class="text-sm text-gray-700 p-2 bg-palette-bg rounded-lg">The IT Director asks about manual charting. You respond: "Our platform uses a certified **API Integration** to post data directly back to your **EHR**, saving each nurse 45 minutes of charting per shift, which translates to $50,000 in labor savings annually."</p>
+          </div>
+          <div class="flex flex-col justify-center items-center h-full w-full max-w-sm mx-auto">
+            <h4 class="text-center text-sm font-semibold text-gray-700">HealthTech Integration Importance</h4>
+            <div class="chart-container w-full h-full"> 
+                <canvas id="w7d3Chart"></canvas>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="w7d4" class="day-card bg-white rounded-lg shadow-xl p-6 mb-8">
+        <h3 class="text-2xl font-bold text-palette-bright-blue mb-4">Day 4 | Topic: GTM Strategy for Clinics, Hospitals, Insurers</h3>
+        <p class="text-gray-600 mb-6">**Story:** The **Go-To-Market (GTM) Strategy** must be customized because a local clinic, a regional hospital system, and a major insurer have wildly different buying motivations and cycles. You need tailored messaging: cost-saving for clinics, security and scale for hospitals, and risk/utilization for insurers.</p>
+        
+        <div class="grid md:grid-cols-2 gap-6 items-center">
+          <div>
+            <h4 class="font-bold text-palette-deep-blue mb-2">📘 Key Terms</h4>
+            <ul class="list-disc list-inside text-sm space-y-1">
+              <li>**GTM Strategy (Go-To-Market):** The specific plan for targeting a market segment (e.g., hospitals).</li>
+              <li>**Payer:** The organization that pays for the care, usually an insurance company (focus on utilization/cost).</li>
+              <li>**Provider:** The organization that delivers the care, usually a hospital or clinic (focus on efficiency/patient care).</li>
+            </ul>
+            <h4 class="font-bold text-palette-deep-blue mt-4 mb-2">💼 Use Case</h4>
+            <p class="text-sm text-gray-700 p-2 bg-palette-bg rounded-lg">When pitching a local **Clinic** (**Provider**), you emphasize low upfront cost and ease of use. When pitching an **Insurer** (**Payer**), your **GTM Strategy** shifts to demonstrating a predicted 10% reduction in long-term claims costs.</p>
+          </div>
+          <div class="chart-container">
+            <h4 class="text-center text-sm font-semibold text-gray-700">HealthTech Sales Cycle Duration by Buyer</h4>
+            <canvas id="w7d4Chart"></canvas>
+          </div>
+        </div>
+      </section>
+
+      <section id="w7d5" class="day-card bg-white rounded-lg shadow-xl p-6 mb-8">
+        <h3 class="text-2xl font-bold text-palette-bright-blue mb-4">Day 5 | Topic: Strategic HealthTech GTM Pitch Challenge</h3>
+        <p class="text-gray-600 mb-6">**Story:** Day 5 is the application of HealthTech expertise. Students perform a **GTM Pitch Challenge** for a new healthcare tool, requiring them to synthesize knowledge of **HIPAA** compliance, target the correct buyer persona (Provider vs. Payer), and deliver a value-first pitch that addresses both financial ROI and patient care outcomes.</p>
+        
+        <div class="grid md:grid-cols-2 gap-6 items-center">
+          <div>
+            <h4 class="font-bold text-palette-deep-blue mb-2">📘 Key Activities</h4>
+            <ul class="list-disc list-inside text-sm space-y-1">
+              <li>**Role-play:** HealthTech buyer call, focusing on compliance objections.</li>
+              <li>**Feature Research:** Researching and mapping compliance features (e.g., SOC 2, HIPAA).</li>
+              <li>**GTM Pitch Challenge:** Presenting a targeted GTM strategy for a new healthcare tool.</li>
+            </ul>
+            <h4 class="font-bold text-palette-deep-blue mt-4 mb-2">💼 Key Takeaway</h4>
+            <p class="text-sm text-gray-700 p-2 bg-palette-bg rounded-lg">Selling HealthTech means selling trust. Before you can discuss innovation or efficiency, you must demonstrate a non-negotiable commitment to data privacy, compliance, and risk mitigation.</p>
+          </div>
+          <div class="chart-container">
+            <h4 class="text-center text-sm font-semibold text-gray-700">HealthTech Pitch Focus Breakdown</h4>
+            <canvas id="w7d5Chart"></canvas>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <div id="week-8" class="pt-8">
+      <h2 class="text-4xl font-extrabold text-palette-deep-blue border-b-4 border-palette-light-blue pb-3 mb-10 text-center">
+        Week 8: Sector Sprint: Cybersecurity SaaS
+      </h2>
+
+      <section id="w8d1" class="day-card bg-white rounded-lg shadow-xl p-6 mb-8">
+        <h3 class="text-2xl font-bold text-palette-bright-blue mb-4">Day 1 | Topic: Complex Sales Cycles in Cybersecurity</h3>
+        <p class="text-gray-600 mb-6">**Story:** Cybersecurity sales cycles are notoriously **complex** because the product is often seen as insurance—a necessary cost—and involves multiple technical and executive stakeholders. The cycle is driven by urgency (a recent breach) or long-term planning, requiring the rep to manage a multi-threaded, often 6-9 month sales process.</p>
+        
+        <div class="grid md:grid-cols-2 gap-6">
+          <div>
+            <h4 class="font-bold text-palette-deep-blue mb-2">📘 Key Terms</h4>
+            <ul class="list-disc list-inside text-sm space-y-1">
+              <li>**Complex Sales Cycle:** A long cycle involving multiple decision-makers and high-value risk.</li>
+              <li>**Fear, Uncertainty, Doubt (FUD):** A messaging strategy focused on the cost of inaction (a breach).</li>
+              <li>**Proof of Value (POV):** A formal test to prove the security tool can detect specific threats.</li>
+            </ul>
+            <h4 class="font-bold text-palette-deep-blue mt-4 mb-2">💼 Use Case</h4>
+            <p class="text-sm text-gray-700 p-2 bg-palette-bg rounded-lg">A prospect is hesitant to replace their current solution. You introduce a **POV** to test their current system, knowing your tool will detect vulnerabilities, turning the **Complex Sales Cycle** from a "nice-to-have" to an urgent fix.</p>
+          </div>
+          <div class="chart-container">
+            <h4 class="text-center text-sm font-semibold text-gray-700">W8 Focus: Cybersecurity Sales Cycle Duration</h4>
+            <canvas id="w8d1Chart"></canvas>
+          </div>
+        </div>
+      </section>
+
+      <section id="w8d2" class="day-card bg-white rounded-lg shadow-xl p-6 mb-8">
+        <h3 class="text-2xl font-bold text-palette-bright-blue mb-4">Day 2 | Topic: Procurement Barriers and Risk Management</h3>
+        <p class="text-gray-600 mb-6">**Story:** **Procurement** in a security sale is rigorous due to the high financial and legal risks associated with a failure. Your sale must address **Risk Management** by providing strong **Service Level Agreements (SLAs)**, clear audit trails, and legal assurances, often slowing the deal down but building necessary executive confidence.</p>
+        
+        <div class="grid md:grid-cols-2 gap-6 items-center">
+          <div>
+            <h4 class="font-bold text-palette-deep-blue mb-2">📘 Key Terms</h4>
+            <ul class="list-disc list-inside text-sm space-y-1">
+              <li>**Procurement Barriers:** Formal organizational rules/processes that slow down purchasing.</li>
+              <li>**Risk Management:** The core value proposition of security products (preventing financial or data loss).</li>
+              <li>**Audit Trail:** The ability of the software to log all user and system activity for compliance checks.</li>
+            </ul>
+            <h4 class="font-bold text-palette-deep-blue mt-4 mb-2">💼 Use Case</h4>
+            <p class="text-sm text-gray-700 p-2 bg-palette-bg rounded-lg">The legal team raises concerns about the contract. You pre-emptively supply an external audit showing compliance with three major industry standards (ISO 27001), clearing a major **Procurement Barrier** before the legal review even begins.</p>
+          </div>
+          <div class="chart-container">
+            <h4 class="text-center text-sm font-semibold text-gray-700">Procurement Barriers by Complexity</h4>
+            <canvas id="w8d2Chart"></canvas>
+          </div>
+        </div>
+      </section>
+
+      <section id="w8d3" class="day-card bg-white rounded-lg shadow-xl p-6 mb-8">
+        <h3 class="text-2xl font-bold text-palette-bright-blue mb-4">Day 3 | Topic: Selling SaaS Security Tools (VPNs, MDR, SOC-as-a-Service)</h3>
+        <p class="text-gray-600 mb-6">**Story:** Cybersecurity is moving rapidly to the cloud. You must understand the new acronyms—**VPNs**, **MDR** (Managed Detection and Response), and **SOC-as-a-Service**—to position your product effectively. You sell the transition from costly, in-house hardware to predictable, scalable, cloud-based **SaaS** security.</p>
+        
+        <div class="grid md:grid-cols-2 gap-6 items-center">
+          <div>
+            <h4 class="font-bold text-palette-deep-blue mb-2">📘 Key Terms</h4>
+            <ul class="list-disc list-inside text-sm space-y-1">
+              <li>**MDR (Managed Detection and Response):** Outsourced, 24/7 security monitoring and threat response.</li>
+              <li>**SOC-as-a-Service:** Outsourcing the entire Security Operations Center function to a SaaS platform.</li>
+              <li>**Subscription Model:** Selling security as a predictable operational expense (**OpEx**) rather than a capital cost (**CapEx**).</li>
+            </ul>
+            <h4 class="font-bold text-palette-deep-blue mt-4 mb-2">💼 Use Case</h4>
+            <p class="text-sm text-gray-700 p-2 bg-palette-bg rounded-lg">The CISO mentions the difficulty in hiring 24/7 security analysts. You pitch your **MDR** platform, showing that a fixed monthly subscription provides immediate, expert coverage at a third of the cost of hiring a full-time, in-house team.</p>
+          </div>
+          <div class="flex flex-col justify-center items-center h-full w-full max-w-sm mx-auto">
+            <h4 class="text-center text-sm font-semibold text-gray-700">Cost Savings: SaaS vs. On-Prem Security</h4>
+            <div class="chart-container w-full h-full"> 
+                <canvas id="w8d3Chart"></canvas>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="w8d4" class="day-card bg-white rounded-lg shadow-xl p-6 mb-8">
+        <h3 class="text-2xl font-bold text-palette-bright-blue mb-4">Day 4 | Topic: Objection Mapping: Security Concerns</h3>
+        <p class="text-gray-600 mb-6">**Story:** In security, an objection is often a requirement in disguise. **Objection Mapping** means documenting every potential security concern—from "too difficult to deploy" to "not compliant"—and preparing a precise, data-backed counter-response. This proactive planning turns roadblocks into proof points.</p>
+        
+        <div class="grid md:grid-cols-2 gap-6 items-center">
+          <div>
+            <h4 class="font-bold text-palette-deep-blue mb-2">📘 Key Terms</h4>
+            <ul class="list-disc list-inside text-sm space-y-1">
+              <li>**Objection Mapping:** Pre-emptively documenting and preparing responses for all common objections.</li>
+              <li>**Deployment Friction:** Concerns about the time, effort, or complexity of installing and configuring the tool.</li>
+              <li>**Compliance-as-a-Service:** Positioning your tool's features as automatically handling compliance requirements.</li>
+            </ul>
+            <h4 class="font-bold text-palette-deep-blue mt-4 mb-2">💼 Use Case</h4>
+            <p class="text-sm text-gray-700 p-2 bg-palette-bg rounded-lg">The security engineer says, "It looks great, but deployment will take six months." You refer to your **Objection Map** and show a video demonstrating a fully automated deployment in under one hour, eliminating the **Deployment Friction** concern.</p>
+          </div>
+          <div class="chart-container">
+            <h4 class="text-center text-sm font-semibold text-gray-700">Security Objection Frequency by Type</h4>
+            <canvas id="w8d4Chart"></canvas>
+          </div>
+        </div>
+      </section>
+
+      <section id="w8d5" class="day-card bg-white rounded-lg shadow-xl p-6 mb-8">
+        <h3 class="text-2xl font-bold text-palette-bright-blue mb-4">Day 5 | Topic: Mock Buyer Call + Objection Handling Exercise</h3>
+        <p class="text-gray-600 mb-6">**Story:** The final day is a high-stakes application. Students participate in a **Mock Buyer Call** focused on a Cybersecurity solution, requiring them to handle rapid-fire technical and procurement objections using their knowledge from the entire week. This exercise focuses on a core skill: framing the conversation around **Risk vs. Trust**.</p>
+        
+        <div class="grid md:grid-cols-2 gap-6 items-center">
+          <div>
+            <h4 class="font-bold text-palette-deep-blue mb-2">📘 Key Activities</h4>
+            <ul class="list-disc list-inside text-sm space-y-1">
+              <li>**Cybersecurity Objection Mapping:** Hands-on creation of objection/response pairs.</li>
+              <li>**Mock Pitch Call:** Roleplaying the sale of a complex tool (e.g., SOC-as-a-Service).</li>
+              <li>**Risk vs. Trust Messaging:** Simulation to practice framing security discussions.</li>
+            </ul>
+            <h4 class="font-bold text-palette-deep-blue mt-4 mb-2">💼 Key Takeaway</h4>
+            <p class="text-sm text-gray-700 p-2 bg-palette-bg rounded-lg">To win a Cybersecurity sale, you must successfully convert the prospect’s fear of **Risk** (a breach) into **Trust** in your solution, ultimately proving that buying your product is a superior form of **Risk Management**.</p>
+          </div>
+          <div class="chart-container">
+            <h4 class="text-center text-sm font-semibold text-gray-700">Cybersecurity Sales: Trust vs. Feature Score</h4>
+            <canvas id="w8d5Chart"></canvas>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    </div> <script>
+    const chartColors = ['#00449E', '#0059CF', '#007BFF', '#41A0FF', '#89C8FF', '#EBF5FF'];
+
+    function processLabels(labels) {
+      return labels.map(label => {
+        if (typeof label === 'string' && label.length > 16) {
+          const words = label.split(' ');
+          let lines = [];
+          let currentLine = '';
+          words.forEach(word => {
+            if ((currentLine + ' ' + word).length > 16 && currentLine.length > 0) {
+              lines.push(currentLine);
+              currentLine = word;
+            } else {
+              currentLine = currentLine.length === 0 ? word : currentLine + ' ' + word;
+            }
+          });
+          if (currentLine.length > 0) {
+            lines.push(currentLine);
+          }
+          return lines;
+        }
+        return label;
+      });
+    }
+
+    const customTooltip = {
+      plugins: {
+        tooltip: {
+          callbacks: {
+            title: function(tooltipItems) {
+              const item = tooltipItems[0];
+              let label = item.chart.data.labels[item.dataIndex];
+              if (Array.isArray(label)) {
+                return label.join(' ');
+              } else {
+                return label;
+              }
+            }
+          }
+        }
+      }
+    };
+    
+    document.addEventListener('DOMContentLoaded', () => {
+
+      new Chart(document.getElementById('w1d1Chart'), {
+        type: 'doughnut',
+        data: {
+          labels: ['SaaS', 'Fintech', 'Cybersecurity', 'Health Tech'],
+          datasets: [{
+            data: [40, 25, 20, 15],
+            backgroundColor: chartColors.slice(0, 4),
+            borderColor: '#ffffff',
+            borderWidth: 2
+          }]
+        },
+        options: { responsive: true, maintainAspectRatio: false, ...customTooltip, plugins: { ...customTooltip.plugins, legend: { position: 'bottom' }, title: { display: false } } }
+      });
+      
+      new Chart(document.getElementById('w1d3Chart'), {
+        type: 'bar',
+        data: {
+          labels: ['SDR Handoff (1-3 Days)', 'AE Demo (7-14 Days)', 'Negotiation (10-20 Days)'],
+          datasets: [{
+            label: 'Cycle Duration',
+            data: [2, 10, 15],
+            backgroundColor: [chartColors[4], chartColors[3], chartColors[0]],
+            borderRadius: 4
+          }]
+        },
+        options: { 
+          responsive: true, maintainAspectRatio: false, indexAxis: 'y', ...customTooltip, 
+          scales: { x: { beginAtZero: true, grid: { color: '#e2e8f0' } }, y: { grid: { display: false } } },
+          plugins: { ...customTooltip.plugins, legend: { display: false } } 
+        }
+      });
+
+      new Chart(document.getElementById('w1d4Chart'), {
+        type: 'polarArea',
+        data: {
+          labels: processLabels(['Skill Improvement', 'Resilience to Rejection', 'Emotional Intelligence', 'Technical Acumen']),
+          datasets: [{
+            data: [90, 85, 75, 70],
+            backgroundColor: chartColors.slice(0, 4),
+            borderColor: '#ffffff',
+            borderWidth: 1
+          }]
+        },
+        options: { responsive: true, maintainAspectRatio: false, ...customTooltip, scales: { r: { display: false } }, plugins: { ...customTooltip.plugins, legend: { position: 'bottom' } } }
+      });
+
+      new Chart(document.getElementById('w1d5Chart'), {
+        type: 'pie',
+        data: {
+          labels: ['Role Simulation & Practice', 'Foundational Theory Review', 'Career Coaching'],
+          datasets: [{
+            data: [50, 30, 20],
+            backgroundColor: [chartColors[0], chartColors[1], chartColors[3]],
+            borderColor: '#ffffff',
+            borderWidth: 2
+          }]
+        },
+        options: { responsive: true, maintainAspectRatio: false, ...customTooltip, plugins: { ...customTooltip.plugins, legend: { position: 'bottom' }, title: { display: false } } }
+      });
+      
+      new Chart(document.getElementById('w2d1Chart'), {
+        type: 'radar',
+        data: {
+          labels: processLabels(['Scalability (Cloud)', 'Risk Mitigation (Cybersecurity)', 'Integration Ease (Software)', 'System Stability (IT)']),
+          datasets: [{
+            label: 'Buyer Priority Score (Max 10)',
+            data: [9, 10, 8, 7],
+            backgroundColor: chartColors[4] + '90',
+            borderColor: chartColors[0],
+            pointBackgroundColor: chartColors[0],
+            pointBorderColor: '#fff',
+            pointHoverBackgroundColor: '#fff',
+            pointHoverBorderColor: chartColors[0]
+          }]
+        },
+        options: { responsive: true, maintainAspectRatio: false, ...customTooltip, scales: { r: { suggestedMin: 0, suggestedMax: 10 } }, plugins: { ...customTooltip.plugins, legend: { display: false } } }
+      });
+
+      new Chart(document.getElementById('w2d3Chart'), {
+        type: 'bar',
+        data: {
+          labels: processLabels(['Old Manual Process', 'Modern DevOps/CI/CD']),
+          datasets: [{
+            label: 'Time to Release Update (Days)',
+            data: [21, 2],
+            backgroundColor: [chartColors[3], chartColors[0]],
+            borderRadius: 6
+          }]
+        },
+        options: { 
+          responsive: true, maintainAspectRatio: false, indexAxis: 'y', ...customTooltip, 
+          scales: { x: { beginAtZero: true, grid: { color: '#e2e8f0' } }, y: { grid: { display: false } } },
+          plugins: { ...customTooltip.plugins, legend: { display: false } } 
+        }
+      });
+      
+      new Chart(document.getElementById('w2d5Chart'), {
+        type: 'doughnut',
+        data: {
+          labels: processLabels(['Relationship Building Time', 'AI-Automated Task Time']),
+          datasets: [{
+            data: [65, 35],
+            backgroundColor: [chartColors[1], chartColors[4]],
+            borderColor: '#ffffff',
+            borderWidth: 2
+          }]
+        },
+        options: { responsive: true, maintainAspectRatio: false, ...customTooltip, plugins: { ...customTooltip.plugins, legend: { position: 'bottom' }, title: { display: false } } }
+      });
+
+      new Chart(document.getElementById('w3d2Chart'), {
+        type: 'bar',
+        data: {
+          labels: ['Avg. Touchpoints', 'Target Touchpoints'],
+          datasets: [{
+            label: 'Count',
+            data: [12, 8],
+            backgroundColor: [chartColors[2], chartColors[0]],
+            borderRadius: 4
+          }]
+        },
+        options: { 
+          responsive: true, maintainAspectRatio: false, ...customTooltip, 
+          scales: { y: { beginAtZero: true, grid: { color: '#e2e8f0' } }, x: { grid: { display: false } } },
+          plugins: { ...customTooltip.plugins, legend: { display: false } } 
+        }
+      });
+      
+      new Chart(document.getElementById('w3d3Chart'), {
+        type: 'bar',
+        data: {
+          labels: ['Deals Logged', 'Data Maintained'],
+          datasets: [{
+            data: [95, 80],
+            backgroundColor: [chartColors[0], chartColors[4]],
+            borderRadius: 4
+          }]
+        },
+        options: { 
+          responsive: true, maintainAspectRatio: false, ...customTooltip, 
+          scales: { y: { beginAtZero: true, max: 100, grid: { color: '#e2e8f0' } }, x: { grid: { display: false } } },
+          plugins: { ...customTooltip.plugins, legend: { display: false } } 
+        }
+      });
+
+      new Chart(document.getElementById('w3d4Chart'), {
+        type: 'bar',
+        data: {
+          labels: ['Quota Target', 'Forecasted Revenue', 'Total Pipeline Value'],
+          datasets: [{
+            label: 'Value ($K)',
+            data: [150, 120, 250],
+            backgroundColor: [chartColors[0], chartColors[3], chartColors[4]],
+            borderRadius: 4
+          }]
+        },
+        options: { 
+          responsive: true, maintainAspectRatio: false, ...customTooltip, 
+          scales: { y: { beginAtZero: true, grid: { color: '#e2e8f0' } }, x: { grid: { display: false } } },
+          plugins: { ...customTooltip.plugins, legend: { display: false } } 
+        }
+      });
+
+      new Chart(document.getElementById('w4d1Chart'), {
+        type: 'bar',
+        data: {
+          labels: processLabels(['Engagement Data', 'Conversion Data', 'Velocity Data']),
+          datasets: [{
+            label: 'Strategic Impact Score (Max 10)',
+            data: [10, 9, 7],
+            backgroundColor: [chartColors[0], chartColors[1], chartColors[2]],
+            borderRadius: 4
+          }]
+        },
+        options: { 
+          responsive: true, maintainAspectRatio: false, indexAxis: 'y', ...customTooltip, 
+          scales: { x: { beginAtZero: true, max: 10, grid: { color: '#e2e8f0' } }, y: { grid: { display: false } } },
+          plugins: { ...customTooltip.plugins, legend: { display: false } } 
+        }
+      });
+
+      new Chart(document.getElementById('w4d2Chart'), {
+        type: 'doughnut',
+        data: {
+          labels: ['Score', ''],
+          datasets: [{
+            data: [85, 15],
+            backgroundColor: [chartColors[1], chartColors[5]],
+            borderColor: ['#0059CF', '#EBF5FF'],
+            borderWidth: 1,
+            circumference: 180,
+            rotation: 270
+          }]
+        },
+        options: {
+          responsive: true, maintainAspectRatio: false, cutout: '70%', ...customTooltip, 
+          plugins: { 
+            ...customTooltip.plugins, legend: { display: false }, 
+            title: {
+              display: true, text: '85/100 (Hot Lead)', position: 'bottom', padding: { top: -20 }, 
+              font: { size: 18, weight: 'bold' }, color: chartColors[1] 
+            }
+          }
+        }
+      });
+
+      new Chart(document.getElementById('w4d3Chart'), {
+        type: 'scatter',
+        data: {
+          labels: processLabels(['Deal A', 'Deal B', 'Deal C', 'Deal D (Commitment)']),
+          datasets: [{
+            label: 'Deals in Pipeline',
+            data: [{x: 45, y: 30}, {x: 20, y: 150}, {x: 80, y: 50}, {x: 95, y: 50}],
+            backgroundColor: [chartColors[3], chartColors[0], chartColors[2], chartColors[1]],
+            pointRadius: 6,
+            pointHoverRadius: 8
+          }]
+        },
+        options: {
+          responsive: true, maintainAspectRatio: false, ...customTooltip,
+          scales: {
+            x: { type: 'linear', position: 'bottom', title: { display: true, text: 'Close Probability (%)' }, min: 0, max: 100 },
+            y: { type: 'linear', position: 'left', title: { display: true, text: 'Deal Size ($K)' } }
+          },
+          plugins: { ...customTooltip.plugins, legend: { display: false } }
+        }
+      });
+
+      new Chart(document.getElementById('w4d4Chart'), {
+        type: 'pie',
+        data: {
+          labels: processLabels(['Personalization', 'Lead Gen Research', 'Volume Outreach']),
+          datasets: [{
+            data: [45, 30, 25],
+            backgroundColor: [chartColors[0], chartColors[3], chartColors[4]],
+            borderColor: '#ffffff',
+            borderWidth: 2
+          }]
+        },
+        options: { responsive: true, maintainAspectRatio: false, ...customTooltip, plugins: { ...customTooltip.plugins, legend: { position: 'bottom' }, title: { display: false } } }
+      });
+
+      // W5 Charts (Product Demos, Value Selling & Objection Handling)
+      new Chart(document.getElementById('w5d1Chart'), {
+        type: 'doughnut',
+        data: {
+          labels: ['Chalk Talk / Conceptual Alignment', 'Product Feature Demonstration'],
+          datasets: [{
+            data: [35, 65],
+            backgroundColor: [chartColors[0], chartColors[4]],
+            borderColor: '#ffffff',
+            borderWidth: 2
+          }]
+        },
+        options: { responsive: true, maintainAspectRatio: false, ...customTooltip, plugins: { ...customTooltip.plugins, legend: { position: 'bottom' }, title: { display: false } } }
+      });
+      
+      new Chart(document.getElementById('w5d2Chart'), {
+        type: 'bar',
+        data: {
+          labels: ['Value-First Selling', 'Feature-First Selling'],
+          datasets: [{
+            label: 'Close Rate (%)',
+            data: [35, 15],
+            backgroundColor: [chartColors[0], chartColors[3]],
+            borderRadius: 6
+          }]
+        },
+        options: { 
+          responsive: true, maintainAspectRatio: false, ...customTooltip, 
+          scales: { y: { beginAtZero: true, max: 50, grid: { color: '#e2e8f0' } }, x: { grid: { display: false } } },
+          plugins: { ...customTooltip.plugins, legend: { display: false } } 
+        }
+      });
+      
+      new Chart(document.getElementById('w5d3Chart'), {
+        type: 'scatter',
+        data: {
+          labels: processLabels(['Low Personalization (Recorded)', 'High Personalization (Live)']),
+          datasets: [{
+            label: 'Demo Effectiveness',
+            data: [{x: 20, y: 80}, {x: 80, y: 95}],
+            backgroundColor: [chartColors[4], chartColors[0]],
+            pointRadius: 6,
+            pointHoverRadius: 8
+          }]
+        },
+        options: {
+          responsive: true, maintainAspectRatio: false, ...customTooltip,
+          scales: {
+            x: { type: 'linear', position: 'bottom', title: { display: true, text: 'Personalization Score (%)' }, min: 0, max: 100 },
+            y: { type: 'linear', position: 'left', title: { display: true, text: 'Customer Engagement Score (%)' }, min: 0, max: 100 }
+          },
+          plugins: { ...customTooltip.plugins, legend: { display: false } }
+        }
+      });
+
+      new Chart(document.getElementById('w5d4Chart'), {
+        type: 'polarArea',
+        data: {
+          labels: processLabels(['Problem/Pain Point (30%)', 'Agitation/Consequence (20%)', 'Solution/Resolution (50%)']),
+          datasets: [{
+            data: [30, 20, 50],
+            backgroundColor: [chartColors[3], chartColors[1], chartColors[0]],
+            borderColor: '#ffffff',
+            borderWidth: 1
+          }]
+        },
+        options: { responsive: true, maintainAspectRatio: false, ...customTooltip, scales: { r: { display: false } }, plugins: { ...customTooltip.plugins, legend: { position: 'bottom' } } }
+      });
+
+      new Chart(document.getElementById('w5d5Chart'), {
+        type: 'pie',
+        data: {
+          labels: ['Non-Technical (Price/Timing)', 'Technical (Integration/Feasibility)'],
+          datasets: [{
+            data: [60, 40],
+            backgroundColor: [chartColors[0], chartColors[3]],
+            borderColor: '#ffffff',
+            borderWidth: 2
+          }]
+        },
+        options: { responsive: true, maintainAspectRatio: false, ...customTooltip, plugins: { ...customTooltip.plugins, legend: { position: 'bottom' }, title: { display: false } } }
+      });
+      
+      // W6 Charts (Prospecting, POCs, and Trust Building)
+      new Chart(document.getElementById('w6d1Chart'), {
+        type: 'bar',
+        data: {
+          labels: ['Personalized Email Sequence', 'Cold Calling', 'Social Prospecting'],
+          datasets: [{
+            label: 'Meeting Booked Rate (%)',
+            data: [8, 5, 4],
+            backgroundColor: [chartColors[0], chartColors[2], chartColors[4]],
+            borderRadius: 4
+          }]
+        },
+        options: { 
+          responsive: true, maintainAspectRatio: false, ...customTooltip, 
+          scales: { y: { beginAtZero: true, max: 10, grid: { color: '#e2e8f0' } }, x: { grid: { display: false } } },
+          plugins: { ...customTooltip.plugins, legend: { display: false } } 
+        }
+      });
+      
+      new Chart(document.getElementById('w6d2Chart'), {
+        type: 'doughnut',
+        data: {
+          labels: ['POC with Defined Criteria (Success)', 'POC with Vague Criteria (Failure)'],
+          datasets: [{
+            data: [75, 25],
+            backgroundColor: [chartColors[0], chartColors[3]],
+            borderColor: '#ffffff',
+            borderWidth: 2
+          }]
+        },
+        options: { responsive: true, maintainAspectRatio: false, ...customTooltip, plugins: { ...customTooltip.plugins, legend: { position: 'bottom' }, title: { display: false } } }
+      });
+
+      new Chart(document.getElementById('w6d3Chart'), {
+        type: 'bar',
+        data: {
+          labels: ['Whitepaper Download', 'Webinar Attendee', 'Case Study Reader'],
+          datasets: [{
+            label: 'Conversion to Demo (%)',
+            data: [10, 15, 20],
+            backgroundColor: [chartColors[4], chartColors[2], chartColors[0]],
+            borderRadius: 4
+          }]
+        },
+        options: { 
+          responsive: true, maintainAspectRatio: false, ...customTooltip, 
+          scales: { y: { beginAtZero: true, max: 25, grid: { color: '#e2e8f0' } }, x: { grid: { display: false } } },
+          plugins: { ...customTooltip.plugins, legend: { display: false } } 
+        }
+      });
+
+      new Chart(document.getElementById('w6d4Chart'), {
+        type: 'bar',
+        data: {
+          labels: ['Standard Email Outreach', 'Video Prospecting Outreach'],
+          datasets: [{
+            label: 'Response Rate (%)',
+            data: [4, 18],
+            backgroundColor: [chartColors[3], chartColors[0]],
+            borderRadius: 6
+          }]
+        },
+        options: { 
+          responsive: true, maintainAspectRatio: false, indexAxis: 'y', ...customTooltip, 
+          scales: { x: { beginAtZero: true, max: 20, grid: { color: '#e2e8f0' } }, y: { grid: { display: false } } },
+          plugins: { ...customTooltip.plugins, legend: { display: false } } 
+        }
+      });
+
+      new Chart(document.getElementById('w6d5Chart'), {
+        type: 'polarArea',
+        data: {
+          labels: processLabels(['Email Touches', 'Call Touches', 'Social Touches']),
+          datasets: [{
+            data: [50, 30, 20],
+            backgroundColor: [chartColors[0], chartColors[3], chartColors[4]],
+            borderColor: '#ffffff',
+            borderWidth: 1
+          }]
+        },
+        options: { responsive: true, maintainAspectRatio: false, ...customTooltip, scales: { r: { display: false } }, plugins: { ...customTooltip.plugins, legend: { position: 'bottom' } } }
+      });
+
+      // W7 Charts (HealthTech Sales Sprint)
+      new Chart(document.getElementById('w7d1Chart'), {
+        type: 'bar',
+        data: {
+          labels: ['Compliance/Privacy (HIPAA)', 'EHR Integration', 'Cost/ROI'],
+          datasets: [{
+            label: 'Buyer Priority Score (Max 10)',
+            data: [10, 9, 7],
+            backgroundColor: [chartColors[0], chartColors[1], chartColors[3]],
+            borderRadius: 4
+          }]
+        },
+        options: { 
+          responsive: true, maintainAspectRatio: false, indexAxis: 'y', ...customTooltip, 
+          scales: { x: { beginAtZero: true, max: 10, grid: { color: '#e2e8f0' } }, y: { grid: { display: false } } },
+          plugins: { ...customTooltip.plugins, legend: { display: false } } 
+        }
+      });
+      
+      new Chart(document.getElementById('w7d2Chart'), {
+        type: 'doughnut',
+        data: {
+          labels: ['B2B (Financial/Efficiency)', 'B2C (Patient Experience)'],
+          datasets: [{
+            data: [55, 45],
+            backgroundColor: [chartColors[0], chartColors[4]],
+            borderColor: '#ffffff',
+            borderWidth: 2
+          }]
+        },
+        options: { responsive: true, maintainAspectRatio: false, ...customTooltip, plugins: { ...customTooltip.plugins, legend: { position: 'bottom' }, title: { display: false } } }
+      });
+      
+      new Chart(document.getElementById('w7d3Chart'), {
+        type: 'bar',
+        data: {
+          labels: ['Integration (EHR)', 'Compliance', 'Feature Set'],
+          datasets: [{
+            data: [90, 85, 70],
+            backgroundColor: [chartColors[0], chartColors[3], chartColors[4]],
+            borderRadius: 4
+          }]
+        },
+        options: { 
+          responsive: true, maintainAspectRatio: false, ...customTooltip, 
+          scales: { y: { beginAtZero: true, max: 100, grid: { color: '#e2e8f0' } }, x: { grid: { display: false } } },
+          plugins: { ...customTooltip.plugins, legend: { display: false } } 
+        }
+      });
+      
+      new Chart(document.getElementById('w7d4Chart'), {
+        type: 'bar',
+        data: {
+          labels: ['Clinic (Provider)', 'Hospital System', 'Insurer (Payer)'],
+          datasets: [{
+            label: 'Average Sales Cycle (Days)',
+            data: [60, 120, 180],
+            backgroundColor: [chartColors[4], chartColors[2], chartColors[0]],
+            borderRadius: 4
+          }]
+        },
+        options: { 
+          responsive: true, maintainAspectRatio: false, ...customTooltip, 
+          scales: { y: { beginAtZero: true, grid: { color: '#e2e8f0' } }, x: { grid: { display: false } } },
+          plugins: { ...customTooltip.plugins, legend: { display: false } } 
+        }
+      });
+
+      new Chart(document.getElementById('w7d5Chart'), {
+        type: 'polarArea',
+        data: {
+          labels: processLabels(['Risk Mitigation (Compliance)', 'Patient Outcome ROI', 'System Integration']),
+          datasets: [{
+            data: [45, 30, 25],
+            backgroundColor: [chartColors[0], chartColors[3], chartColors[4]],
+            borderColor: '#ffffff',
+            borderWidth: 1
+          }]
+        },
+        options: { responsive: true, maintainAspectRatio: false, ...customTooltip, scales: { r: { display: false } }, plugins: { ...customTooltip.plugins, legend: { position: 'bottom' } } }
+      });
+
+      // W8 Charts (Cybersecurity SaaS Sprint)
+      new Chart(document.getElementById('w8d1Chart'), {
+        type: 'bar',
+        data: {
+          labels: ['Standard SaaS (Days)', 'Cybersecurity (Days)'],
+          datasets: [{
+            label: 'Cycle Duration',
+            data: [45, 150],
+            backgroundColor: [chartColors[4], chartColors[0]],
+            borderRadius: 6
+          }]
+        },
+        options: { 
+          responsive: true, maintainAspectRatio: false, indexAxis: 'y', ...customTooltip, 
+          scales: { x: { beginAtZero: true, max: 200, grid: { color: '#e2e8f0' } }, y: { grid: { display: false } } },
+          plugins: { ...customTooltip.plugins, legend: { display: false } } 
+        }
+      });
+      
+      new Chart(document.getElementById('w8d2Chart'), {
+        type: 'doughnut',
+        data: {
+          labels: ['Legal/Compliance', 'Vendor Lock-in', 'Budget/Pricing'],
+          datasets: [{
+            data: [45, 30, 25],
+            backgroundColor: chartColors.slice(0, 3),
+            borderColor: '#ffffff',
+            borderWidth: 2
+          }]
+        },
+        options: { responsive: true, maintainAspectRatio: false, ...customTooltip, plugins: { ...customTooltip.plugins, legend: { position: 'bottom' }, title: { display: false } } }
+      });
+      
+      new Chart(document.getElementById('w8d3Chart'), {
+        type: 'bar',
+        data: {
+          labels: ['On-Premises (CapEx)', 'SaaS (OpEx)'],
+          datasets: [{
+            label: 'Total Annual Cost ($K)',
+            data: [500, 150],
+            backgroundColor: [chartColors[3], chartColors[0]],
+            borderRadius: 4
+          }]
+        },
+        options: { 
+          responsive: true, maintainAspectRatio: false, ...customTooltip, 
+          scales: { y: { beginAtZero: true, grid: { color: '#e2e8f0' } }, x: { grid: { display: false } } },
+          plugins: { ...customTooltip.plugins, legend: { display: false } } 
+        }
+      });
+
+      new Chart(document.getElementById('w8d4Chart'), {
+        type: 'polarArea',
+        data: {
+          labels: processLabels(['Technical Feasibility/Deployment', 'Compliance/Certifications', 'Budget/Renewal Cost']),
+          datasets: [{
+            data: [35, 40, 25],
+            backgroundColor: [chartColors[3], chartColors[0], chartColors[4]],
+            borderColor: '#ffffff',
+            borderWidth: 1
+          }]
+        },
+        options: { responsive: true, maintainAspectRatio: false, ...customTooltip, scales: { r: { display: false } }, plugins: { ...customTooltip.plugins, legend: { position: 'bottom' } } }
+      });
+
+      new Chart(document.getElementById('w8d5Chart'), {
+        type: 'doughnut',
+        data: {
+          labels: ['Trust & Risk Management Score', 'Technical Feature Score'],
+          datasets: [{
+            data: [65, 35],
+            backgroundColor: [chartColors[0], chartColors[4]],
+            borderColor: '#ffffff',
+            borderWidth: 2
+          }]
+        },
+        options: { responsive: true, maintainAspectRatio: false, ...customTooltip, plugins: { ...customTooltip.plugins, legend: { position: 'bottom' }, title: { display: false } } }
+      });
+
+    });
+  </script> 
+
+</body>
+</html>
